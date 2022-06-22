@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 sp1 (x64) (http://www.altova.com) by XMLSpy 2009 Enterprise Ed., Installed for 30 users (with SMP from 2009-06-19 to 2010-06-20) (NAV ØKONOMITJENESTER) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaSpm/v1" targetNamespace="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaSpm/v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="SM2013DynaSpm">
+		<xs:annotation>
+			<xs:documentation>Ineholder definisjon av dynamiske spørsmål</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="RegelSettVersjon" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Versjon av regelsett</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="DynaGruppe" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Grupperer spørsmål i grupper</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="DynaGruppeId" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Gruppens id på formen 6.1</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="DynaGruppeTekst" type="xs:string">
+								<xs:annotation>
+									<xs:documentation>Gruppetekst benyttes til oversrift på spørsmål som tilhører gruppen</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Beskrivelse" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Beskrivelse av gruppen, benyttes som hjelpetekst på overskriftsnivå</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="DynaRegler" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>En kommaseparert liste med regelnavn som definert i SM2013DynaRegel. Hvis en ragel evaluerere til false blir ihele gruppen skjult og ingen spørsmål vises</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="Obligatorisk" type="xs:string" minOccurs="0"/>
+							<xs:element name="DynaSpm" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>En spørsmålsgruppe består av en eller flere spørsmål</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="DynaSpmId" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>Gruppens id på formen 6.1.1</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="DynaSpmTekst" type="xs:string">
+											<xs:annotation>
+												<xs:documentation>Spørsmålets ledetekst</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Beskrivelse" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Beskrivelse av spørsmålet.  Benyttes som hjelpetekst</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="DynaRegler" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>En kommaseparert liste med regelnavn som definert i SM2013DynaRegel. Benyttes til å skjule enkeltspørsmål</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Restriksjon" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Angir om spørsmålet skal vises i utsriftsdelen.  Foreløpig er det kun verdien "Arbeidsgiver" som benyttes  for del C</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Obligatorisk" type="xs:string" minOccurs="0"/>
+									</xs:sequence>
+									<xs:attribute name="navn" type="xs:string" use="optional">
+										<xs:annotation>
+											<xs:documentation>Valgfritt navn på spørsmålet</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="navn" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Valgfrittnavn på gruppen</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

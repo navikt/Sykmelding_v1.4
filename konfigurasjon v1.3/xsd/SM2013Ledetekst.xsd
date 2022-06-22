@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 sp1 (x64) (http://www.altova.com) by XMLSpy 2009 Enterprise Ed., Installed for 30 users (with SMP from 2009-06-19 to 2010-06-20) (NAV ØKONOMITJENESTER) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013Ledetekst/v1" targetNamespace="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013Ledetekst/v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="SM2013Ledetekst">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="RegelSettVersjon" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Versjon av regelsett</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="Ledetekst" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Referanse" type="xs:string"/>
+							<xs:element name="Tekst" type="xs:string"/>
+							<xs:element name="FeltType" type="xs:string"/>
+							<xs:element name="Beskrivelse" type="xs:string" minOccurs="0"/>
+							<xs:element name="DynaRegler" type="xs:string" minOccurs="0"/>
+							<xs:element name="Restriksjon" type="xs:string" minOccurs="0"/>
+							<xs:element name="Obligatorisk" type="xs:boolean" minOccurs="0"/>
+							<xs:element name="Mapping" type="xs:string" minOccurs="0"/>
+						</xs:sequence>
+						<xs:attribute name="Id" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

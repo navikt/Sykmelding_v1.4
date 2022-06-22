@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SM2013Ledetekst xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013Ledetekst/v1" xsi:schemaLocation="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013Ledetekst/v1 SM2013Ledetekst.xsd">
+	<RegelSettVersjon>3</RegelSettVersjon>
+	<Ledetekst Id="Tittel">
+		<Referanse>Tittel</Referanse>
+		<Tekst>VURDERING AV ARBEIDSMULIGHET / SYKMELDING</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Tittel</Beskrivelse>
+	</Ledetekst>
+	<Ledetekst Id="Overskrift">
+		<Referanse>Tittel</Referanse>
+		<Tekst>FOLKETRYGDEN</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Overskrift</Beskrivelse>
+	</Ledetekst>
+	<Ledetekst Id="A_overskrift">
+		<Referanse>A</Referanse>
+		<Tekst>NAVs eksemplar</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Overskrift for NAVs eksemplar</Beskrivelse>
+	</Ledetekst>
+	<Ledetekst Id="B_overskrift">
+		<Referanse>B</Referanse>
+		<Tekst>Sykmeldtes eksemplar</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Overskrift for sykmeldtes eksemplar</Beskrivelse>
+	</Ledetekst>
+	<Ledetekst Id="C_overskrift">
+		<Referanse>C</Referanse>
+		<Tekst>Arbeidsgivers eksemplar</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Overskrift for arbeidsgivers eksemplar</Beskrivelse>
+	</Ledetekst>
+	<Ledetekst Id="D_overskrift">
+		<Referanse>D</Referanse>
+		<Tekst>Krav om sykepenger</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Overskrift for krav om sykepenger</Beskrivelse>
+	</Ledetekst>
+	<Ledetekst Id="A">
+		<Referanse>A</Referanse>
+		<Tekst>Sykmelderen skal sende dette eksemplaret til NAV skanning utstedelsesedagen</Tekst>
+		<FeltType>Tekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="B">
+		<Referanse>B</Referanse>
+		<Tekst>Pasienten skal selv beholde dette eksemplaret</Tekst>
+		<FeltType>Tekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="C">
+		<Referanse>C</Referanse>
+		<Tekst>Pasienten skal sende dette eksemplaret til arbeidsgiveren utstedelsesdagen</Tekst>
+		<FeltType>Tekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="D">
+		<Referanse>D</Referanse>
+		<Tekst>Pasienten skal sende kravet til den som skal utbetale sykepenger</Tekst>
+		<FeltType>Tekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="SyketilfelleStartDato">
+		<Referanse>0</Referanse>
+		<Tekst>Når startet det legemeldte fraværet?</Tekst>
+		<FeltType>Dato</FeltType>
+		<Beskrivelse>Første dato for sykefraværet meldt av sykmelder (lege, kiropraktor og manuellterapeut). Unntatt egenmelding.</Beskrivelse>
+		<Obligatorisk>true</Obligatorisk>
+		<Mapping>SyketilfelleStartDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="PasientOpplysninger">
+		<Referanse>1</Referanse>
+		<Tekst>Pasientopplysninger</Tekst>
+		<FeltType>Ledetekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="PasientNavn">
+		<Referanse>1.1</Referanse>
+		<Tekst>Navn</Tekst>
+		<FeltType>Tekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="PasientEtternavn">
+		<Referanse>1.1.1</Referanse>
+		<Tekst>Etternavn</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Obligatorisk>true</Obligatorisk>
+		<Mapping>Pasient/Navn/Etternavn</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="PasientFornavn">
+		<Referanse>1.1.2</Referanse>
+		<Tekst>Fornavn</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Obligatorisk>true</Obligatorisk>
+		<Mapping>Pasient/Navn/Fornavn</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="PasientFodselsnummer">
+		<Referanse>1.2</Referanse>
+		<Tekst>Fødselsnummer</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Alternativt kan D-nummer legges inn.</Beskrivelse>
+		<Obligatorisk>true</Obligatorisk>
+		<Mapping>Pasient/Fodselsnummer/Id</Mapping>
+	</Ledetekst>
+<!--	<Ledetekst Id="PasientTelefon">
+		<Referanse>1.3</Referanse>
+		<Tekst>Telefon</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Mapping>Pasient/KontaktInfo/TeleAddress</Mapping>
+	</Ledetekst>  -->
+<!--	<Ledetekst Id="NavnFastlege">
+		<Referanse>1.4</Referanse>
+		<Tekst>Navn på pasientens fastlege</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Mapping>Pasient/NavnFastlege</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="NAVKontor">
+		<Referanse>1.5</Referanse>
+		<Tekst>NAV-kontor</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>NAV-kontoret pasienten tilhører.</Beskrivelse>
+		<Mapping>Pasient/NAVkontor</Mapping>
+	</Ledetekst>-->
+	<Ledetekst Id="Arbeidsgiver">
+		<Referanse>2</Referanse>
+		<Tekst>Arbeidsgiver</Tekst>
+		<FeltType>Ledetekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="HarArbeidsgiver">
+		<Referanse>2.1</Referanse>
+		<Tekst>Pasienten har:</Tekst>
+		<FeltType>Nedtrekksliste, Kodeverk:HarArbeidsgiver</FeltType>
+		<Beskrivelse>Ved flere arbeidsgivere må det registreres en sykmelding for hver.</Beskrivelse>
+		<Obligatorisk>false</Obligatorisk>
+		<Mapping>Arbeidsgiver/HarArbeidsgiver</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="NavnArbeidsgiver">
+		<Referanse>2.2</Referanse>
+		<Tekst>Arbeidsgiver for DENNE sykmeldingen</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Mapping>Arbeidsgiver/NavnArbeidsgiver</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Yrkesbetegnelse">
+		<Referanse>2.3</Referanse>
+		<Tekst>Yrke/stilling for dette arbeidsforholdet</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Type arbeid er viktig for vurdering av aktivitet og arbeidsevne.</Beskrivelse>
+		<Mapping>Arbeidsgiver/Yrkesbetegnelse</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Stillingsprosent">
+		<Referanse>2.4</Referanse>
+		<Tekst>Stillingsprosent</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Prosenten som pasienten er ansatt i hos denne arbeidsgiveren.</Beskrivelse>
+		<Mapping>Arbeidsgiver/Stillingsprosent</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="MedisinskVurdering">
+		<Referanse>3</Referanse>
+		<Tekst>Diagnose</Tekst>
+		<FeltType>Ledetekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="HovedDiagnose">
+		<Referanse>3.1</Referanse>
+		<Tekst>Hoveddiagnose</Tekst>
+		<FeltType>Ledetekst</FeltType>
+		<Beskrivelse>Hovedårsak til denne sykmeldingen.</Beskrivelse>
+	</Ledetekst>
+	<Ledetekst Id="HovedDiagnosesystemS">
+		<Referanse>3.1.1</Referanse>
+		<Tekst>Kodesystem</Tekst>
+		<FeltType>Nedtrekksliste</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/HovedDiagnose/Diagnosekode/S</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="HovedDiagnosekodeV">
+		<Referanse>3.1.2</Referanse>
+		<Tekst>Kode</Tekst>
+		<FeltType>Tekst/Nedtrekksliste</FeltType>
+		<Beskrivelse>Hovedårsak til denne sykmeldingen.</Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/HovedDiagnose/Diagnosekode/V</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="HovedDiagnoseTekst">
+		<Referanse>3.1.3</Referanse>
+		<Tekst>Diagnose</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Hovedårsak til denne sykmeldingen.</Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/HovedDiagnose/Diagnosekode/DN</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Bidiagnoser">
+		<Referanse>3.2</Referanse>
+		<Tekst>Bidiagnoser</Tekst>
+		<FeltType>Ledetekst</FeltType>
+		<Restriksjon>A</Restriksjon>
+	</Ledetekst>
+	<Ledetekst Id="BiDiagnosesystemS">
+		<Referanse>3.2.1</Referanse>
+		<Tekst>Kodesystem</Tekst>
+		<FeltType>Nedtrekksliste</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/BiDiagnoser/Diagnosekode/S</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="BiDiagnosekodeV">
+		<Referanse>3.2.2</Referanse>
+		<Tekst>Kode</Tekst>
+		<FeltType>Tekst/Nedtrekksliste</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/BiDiagnoser/Diagnosekode/V</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="BiDiagnoseTekst">
+		<Referanse>3.2.3</Referanse>
+		<Tekst>Diagnose</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/BiDiagnoser/Diagnosekode/DN</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AnnenFraversArsak">
+		<Referanse>3.3</Referanse>
+		<Tekst>Annen lovfestet fraværsgrunn § 8-4, 2. ledd - oppgis hvis relevant</Tekst>
+		<FeltType>Ledetekst</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/AnnenFraversArsak</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AnnenFraverArsakskode">
+		<Referanse>3.3.1</Referanse>
+		<Tekst>Foreligger det annen fraværsgrunn, velg én årsak</Tekst>
+		<FeltType>Nedtrekksliste, Kodeverk:AnnenFraversarsak</FeltType>
+		<Beskrivelse>Annen fraværsgrunn enn egen sykdom.</Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/AnnenFraversArsak/Arsakskode</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AnnenFraverArsakBeskriv">
+		<Referanse>3.3.2</Referanse>
+		<Tekst>Annen lovfestet fraværsgrunn, beskriv (valgfritt):</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Begrunn annet  lovbestemt fravær.</Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/AnnenFraversArsak/Beskriv</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Svangerskap">
+		<Referanse>3.4</Referanse>
+		<Tekst>Er sykdommen svangerskapsrelatert?</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Beskrivelse>Gjelder bare dersom sykdommen er forårsaket av svangerskapet.</Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/Svangerskap</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Yrkesskade">
+		<Referanse>3.5</Referanse>
+		<Tekst>Kan sykmeldingen skyldes en yrkesskade/yrkessykdom?</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Beskrivelse>Gjelder ikke som melding om yrkesskade/yrkessykdom.</Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/Yrkesskade</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="YrkesskadeDato">
+		<Referanse>3.6</Referanse>
+		<Tekst>Eventuell skadedato</Tekst>
+		<FeltType>Dato</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/YrkesskadeDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="SkjermesForPasient">
+		<Referanse>3.7</Referanse>
+		<Tekst>Det er påtrengende nødvendig å skjerme pasienten for medisinske opplysninger, jf. pasient- og brukerrettighetsloven §§ 3-2 og 5-1</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Beskrivelse> jf. pasient- og brukerrettighetsloven §§ 3-2 og 5-1</Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MedisinskVurdering/SkjermesForPasient</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="SymptomdiagnoseEndring">
+		<Referanse>3.8</Referanse>
+		<Tekst>Kan diagnosen endres fra symptomdiagnose til sykdomsdiagnose?</Tekst>
+		<FeltType>Radio(Ja/Nei)</FeltType>
+		<DynaRegler>Symptomdiagnose</DynaRegler>
+	</Ledetekst>
+	<Ledetekst Id="Aktivitet">
+		<Referanse>4</Referanse>
+		<Tekst>Mulighet for arbeid</Tekst>
+		<FeltType>Ledetekst</FeltType>
+		<Beskrivelse>Vurder alltid om aktivitet er mulig. I sykmeldingen kan forskjellige grader av aktivitet kombineres.  Periodene må være sammenhengende.</Beskrivelse>
+	</Ledetekst>
+	<Ledetekst Id="AvventendeSykmelding">
+		<Referanse>4.1</Referanse>
+		<Tekst>Pasienten kan benytte avventende sykmelding</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Beskrivelse>Kan bare brukes de første 16 dagene. Er bare aktuell dersom pasienten har arbeidsgiver.</Beskrivelse>
+		<DynaRegler>AvventendeSykmelding</DynaRegler>
+		<Mapping>Aktivitet/Periode/AvventendeSykmelding</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AvventendePeriodeFOMDato">
+		<Referanse>4.1.1</Referanse>
+		<Tekst>f.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeFOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AvventendePeriodeTOMDato">
+		<Referanse>4.1.2</Referanse>
+		<Tekst>t.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeTOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AvventendeSykmeldingInnspillTilArbeidsgiver">
+		<Referanse>4.1.3</Referanse>
+		<Tekst>Innspill til arbeidsgiver om tilrettelegging</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Beskriv tiltak og hensyn som må tas for å sikre aktivitet.</Beskrivelse>
+		<DynaRegler>AvventendeSykmelding</DynaRegler>
+		<Mapping>Aktivitet/Periode/AvventendeSykmelding/InnspillTilArbeidsgiver</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="GradertSykmelding">
+		<Referanse>4.2</Referanse>
+		<Tekst>Pasienten kan være delvis i arbeid (gradert sykmelding)</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Mapping>Aktivitet/Periode/GradertSykmelding</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="GradertPeriodeFOMDato">
+		<Referanse>4.2.1</Referanse>
+		<Tekst>f.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeFOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="GradertPeriodeTOMDato">
+		<Referanse>4.2.2</Referanse>
+		<Tekst>t.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeTOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Sykmeldingsgrad">
+		<Referanse>4.2.3</Referanse>
+		<Tekst>Oppgi grad for sykmelding</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Oppgi grad av nedsatt arbeidsevne (fraværsprosent).</Beskrivelse>
+		<Mapping>Aktivitet/Periode/GradertSykmelding/Sykmeldingsgrad</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="GradertSykmeldingReisetilskudd">
+		<Referanse>4.2.4</Referanse>
+		<Tekst>Pasienten kan være delvis i arbeid ved bruk av reisetilskudd</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Beskrivelse>Reisetilskudd kan brukes fra 17. dag. </Beskrivelse>
+		<Mapping>Aktivitet/Periode/GradertSykmelding/Reisetilskudd</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AktivitetIkkeMulig">
+		<Referanse>4.3</Referanse>
+		<Tekst>Pasienten kan ikke være i arbeid (100 % sykmelding)</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="IkkeMuligPeriodeFOMDato">
+		<Referanse>4.3.1</Referanse>
+		<Tekst>f.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeFOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="IkkeMuligPeriodeTOMDato">
+		<Referanse>4.3.2</Referanse>
+		<Tekst>t.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeTOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AktivitetIkkeMuligMedisinskeArsaker">
+		<Referanse>4.3.3</Referanse>
+		<Tekst>Medisinske årsaker hindrer arbeidsrelatert aktivitet</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<DynaRegler>IKKE Forenklet</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig/MedisinskeArsaker</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AktivitetIkkeMuligMedisinskeArsakerArsakskode">
+		<Referanse>4.3.3.1</Referanse>
+		<Tekst>Angi hva som er årsaken</Tekst>
+		<FeltType>Nedtrekksliste, Kodeverk:AktivitetIkkeMuligMedisinskeArsaker</FeltType>
+		<Beskrivelse>Utdypende opplysninger ved uke 7 (aktivitetskravet), uke 17 (videre vurdering av oppfølging) og uke 39 (mot slutten av sykepengeperioden)</Beskrivelse>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig/MedisinskeArsaker/Arsakskode</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AktivitetIkkeMuligMedisinskeArsakerBeskriv">
+		<Referanse>4.3.3.2</Referanse>
+		<Tekst>Beskriv nærmere</Tekst>
+		<FeltType>Tekst</FeltType>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig/MedisinskeArsaker/Beskriv</Mapping>
+	</Ledetekst>
+
+	<Ledetekst Id="AktivitetIkkeMuligMedisinskeArsakerBeskriv1">
+		<Referanse>4.3.3.2</Referanse>
+		<Tekst>Begrunnelse til hjelp i NAVs vurdering av aktivitetskravet</Tekst>
+		<FeltType>Tekst</FeltType>
+		<DynaRegler>UtdypendeOpplysninger1</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig/MedisinskeArsaker/Beskriv</Mapping>
+	</Ledetekst>
+
+	<Ledetekst Id="AktivitetIkkeMuligMedisinskeArsakerBeskriv2">
+		<Referanse>4.3.3.2</Referanse>
+		<Tekst>Beskriv nærmere</Tekst>
+		<FeltType>Tekst</FeltType>
+		<DynaRegler>UtdypendeOpplysninger2</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig/MedisinskeArsaker/Beskriv</Mapping>
+	</Ledetekst>
+	
+	<Ledetekst Id="AktivitetIkkeMuligMedisinskeArsakerBeskriv3">
+		<Referanse>4.3.3.2</Referanse>
+		<Tekst>Beskriv nærmere</Tekst>
+		<FeltType>Tekst</FeltType>
+		<DynaRegler>UtdypendeOpplysninger3</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig/MedisinskeArsaker/Beskriv</Mapping>
+	</Ledetekst>
+
+	<Ledetekst Id="AktivitetIkkeMuligArbeidsplassen">
+		<Referanse>4.3.4</Referanse>
+		<Tekst>Og forhold på arbeidsplassen vanskeliggjør arbeidsrelatert aktivitet </Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<DynaRegler>IKKE Forenklet</DynaRegler>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig/Arbeidsplassen</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AktivitetIkkeMuligArbeidplassenArsakskode">
+		<Referanse>4.3.4.1</Referanse>
+		<Tekst>Angi hva som er årsaken</Tekst>
+		<FeltType>Nedtrekksliste, Kodeverk:AktivitetIkkeMuligArbeidsplassen</FeltType>
+		<Beskrivelse>Utdypende opplysninger ved uke 7 (aktivitetskravet), uke 17 (videre vurdering av oppfølging) og uke 39 (mot slutten av sykepengeperioden)</Beskrivelse>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig/Arbeidsplassen/Arsakskode</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AktivitetIkkeMuligArbeidsplassenBeskriv">
+		<Referanse>4.3.4.2</Referanse> 
+		<Tekst>Beskriv nærmere (Kan leses av arbeidsgiver) </Tekst>
+		<FeltType>Tekst</FeltType>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Mapping>Aktivitet/Periode/AktivitetIkkeMulig/Arbeidsplassen/Beskriv</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Behandlingsdager">
+		<Referanse>4.4</Referanse>
+		<Tekst>Pasienten kan ikke være i arbeid på behandlingsdager</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Beskrivelse>Behandlingen gjør pasienten arbeidsufør hele behandlingsdagen. </Beskrivelse>
+		<Mapping>Aktivitet/Periode/Behandlingsdager</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="BehandlingPeriodeFOMDato">
+		<Referanse>4.4.1</Referanse>
+		<Tekst>f.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeFOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="BehandlingPeriodeTOMDato">
+		<Referanse>4.4.2</Referanse>
+		<Tekst>t.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeTOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AntallBehandlingsdagerUke">
+		<Referanse>4.4.3</Referanse>
+		<Tekst>Oppgi antall dager i perioden</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Maks. 1 pr uke</Beskrivelse>
+		<Mapping>Aktivitet/Periode/Behandlingsdager/AntallBehandlingsdagerUke</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Reisetilskudd">
+		<Referanse>4.5</Referanse>
+		<Tekst>Pasienten kan være i fullt arbeid ved bruk av reisetilskudd</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Beskrivelse>Reisetilskudd kan brukes fra 17. dag. </Beskrivelse>
+		<Mapping>Aktivitet/Periode/Reisetilskudd</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="ReisePeriodeFOMDato">
+		<Referanse>4.5.1</Referanse>
+		<Tekst>f.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeFOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="ReisePeriodeTOMDato">
+		<Referanse>4.5.2</Referanse>
+		<Tekst>t.o.m.</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>Aktivitet/Periode/PeriodeTOMDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Prognose">
+		<Referanse>5</Referanse>
+		<Tekst>Friskmelding/Prognose</Tekst>
+		<FeltType>Ledetekst</FeltType>
+		<Beskrivelse>Arbeidsfør nok til å gjenoppta arbeid</Beskrivelse>
+	</Ledetekst>
+	<Ledetekst Id="ArbeidsforEtterEndtPeriode">
+		<Referanse>5.1</Referanse>
+		<Tekst>Pasienten er 100% arbeidsfør etter denne perioden</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Mapping>Prognose/ArbeidsforEtterEndtPeriode</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="BeskrivHensynArbeidsplassen">
+		<Referanse>5.1.1</Referanse>
+		<Tekst>Beskriv eventuelle hensyn som må tas på arbeidsplassen</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Mapping>Prognose/BeskrivHensynArbeidsplassen</Mapping>
+	</Ledetekst>
+<!--	<Ledetekst Id="EgetArbeidPaSikt">
+		<Referanse>5.2.1</Referanse>
+		<Tekst>Jeg antar at pasienten på sikt kan komme tilbake til samme arbeidsgiver</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Mapping>Prognose/ErIArbeid/EgetArbeidPaSikt</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="ArbeidFraDato">
+		<Referanse>5.2.1.1</Referanse>
+		<Tekst>Anslå når du tror dette kan skje</Tekst>
+		<FeltType>Dato</FeltType>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Mapping>Prognose/ErIArbeid/ArbeidFraDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AnnetArbeidPaSikt">
+		<Referanse>5.2.2</Referanse>
+		<Tekst>Jeg antar at pasienten på sikt kan komme i arbeid hos annen arbeidsgiver</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Mapping>Prognose/ErIArbeid/AnnetArbeidPaSikt</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="ErIArbeidVurderingDato">
+		<Referanse>5.2.3</Referanse>
+		<Tekst>Hvis usikker: Når antar du å kunne gi tilbakemelding på dette?</Tekst>
+		<FeltType>Dato</FeltType>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Prognose/ErIArbeid/VurderingDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="ArbeidsforPaSikt">
+		<Referanse>5.3.1</Referanse>
+		<Tekst>Jeg antar at pasienten på sikt kan komme tilbake i arbeid</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Prognose/ErIkkeIArbeid/ArbeidsforPaSikt</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="ArbeidsforFraDato">
+		<Referanse>5.3.1.1</Referanse>
+		<Tekst>Anslå når du tror dette kan skje</Tekst>
+		<FeltType>Dato</FeltType>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Prognose/ErIkkeIArbeid/ArbeidsforFraDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="ErIkkeIArbeidVurderingDato">
+		<Referanse>5.3.2</Referanse>
+		<Tekst>Hvis usikker: Når antar du å kunne gi tilbakemelding på dette?</Tekst>
+		<FeltType>Dato</FeltType>
+		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Prognose/ErIkkeArbeid/VurderingDato</Mapping>
+	</Ledetekst>-->
+	<Ledetekst Id="UtdypendeOpplysninger">
+		<Referanse>6</Referanse>
+		<Tekst>Utdypende opplysninger</Tekst>
+		<FeltType>Ledetekst</FeltType>
+		<Beskrivelse>Sykmelders helhetsvurdering av pasientens situasjon.</Beskrivelse>
+	</Ledetekst>
+<!--	<Ledetekst Id="Tiltak">
+		<Referanse>7</Referanse>
+		<Tekst>Hva skal til for å bedre arbeidsevnen?</Tekst>
+		<FeltType>Ledetekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="TiltakArbeidsplassen">
+		<Referanse>7.1</Referanse>
+		<Tekst>Tilrettelegging/hensyn som bør tas på arbeidsplassen. Beskriv (kan leses av arbeidsgiver)</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Mapping>Tiltak/TiltakArbeidsplassen</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="TiltakNAV">
+		<Referanse>7.2</Referanse>
+		<Tekst>Tiltak i regi av NAV. Beskriv (Ønskes bistand fra NAV nå, bruk felt 8)</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Innspill til NAVs videre oppfølging i saken. Hvis det er ønske om bistand, og at NAV bør se på saken nå, bruk felt 8. </Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Tiltak/TiltakNAV</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="AndreTiltak">
+		<Referanse>7.3</Referanse>
+		<Tekst>Eventuelle andre innspill til NAV. Beskriv </Tekst>
+		<FeltType>Tekst</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>Tiltak/AndreTiltak</Mapping>
+	</Ledetekst>-->
+<!--	<Ledetekst Id="MeldingTilNav">
+		<Referanse>8</Referanse>
+		<Tekst>Melding til NAV</Tekst>
+		<FeltType>Ledetekst</FeltType>
+		<Beskrivelse>Dette feltet skal bare brukes dersom du mener det er behov for bistand, og at NAV bør følge opp med en gang.</Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+	</Ledetekst>
+	<Ledetekst Id="BistandNAVUmiddelbart">
+		<Referanse>8.1</Referanse>
+		<Tekst>Ønskes bistand fra NAV nå?</Tekst>
+		<FeltType>Sjekkboks</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MeldingTilNav/BistandNAVUmiddelbart</Mapping>
+	</Ledetekst>-->
+	<Ledetekst Id="BeskrivBistandNAV">
+		<Referanse>8</Referanse>
+		<Tekst>Melding til NAV</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Beskrivelse>Melding til NAV. Beskriv dersom det er behov for tiltak, dialogmøte eller oppfølging fra NAV. </Beskrivelse>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>MeldingTilNav/BeskrivBistandNAV</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="MeldingTilArbeidsgiver">
+		<Referanse>9</Referanse>
+		<Tekst>Melding til arbeidsgiver</Tekst>
+		<FeltType>Ledetekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="BeskrivMeldingTilArbeidsgiver">
+		<Referanse>9.1</Referanse>
+		<Tekst>Melding til arbeidsgiver</Tekst>
+		<Beskrivelse>Beskriv tilrettelegging/hensyn som bør tas på arbeidsplassen. </Beskrivelse>
+		<FeltType>Tekst</FeltType>
+		<Mapping>MeldingTilArbeidsgiver</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Oppfolgingsplan">
+		<Referanse>10</Referanse>
+		<Tekst>Oppfølgingsplan og dialogmøte 1</Tekst>
+		<FeltType>Ledetekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="MottattOppfolgingsplan">
+		<Referanse>10.1</Referanse>
+		<Tekst>Har du mottatt oppfølgingsplan fra arbeidsgiver?</Tekst>
+		<FeltType>Radio(Ja/Nei)</FeltType>
+		<Mapping>Oppfolgingsplan/MottattOppfolgingsplan</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="InnkaltDialogmote1">
+		<Referanse>10.2</Referanse>
+		<Tekst>Er du innkalt til dialogmøte 1 i regi av arbeidsgiver?</Tekst>
+		<FeltType>Radio(Ja/Nei)</FeltType>
+		<Mapping>Oppfolgingsplan/InnkaltDialogmote1</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="DeltattDialogmote1">
+		<Referanse>10.3</Referanse>
+		<Tekst>Hvis ja, deltok du?</Tekst>
+		<FeltType>Radio(Ja/Nei)</FeltType>
+		<Mapping>Oppfolgingsplan/DeltattDialogmote1</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="ArsakIkkeDeltatt">
+		<Referanse>10.4</Referanse>
+		<Tekst>Hvis nei, angi årsak</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Mapping>Oppfolgingsplan/ArsakIkkeDeltatt</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="KontaktMedPasient">
+		<Referanse>11</Referanse>
+		<Tekst>Tilbakedatering</Tekst>
+		<FeltType>Ledetekst</FeltType>
+		<Restriksjon>A</Restriksjon>
+	</Ledetekst>
+	<Ledetekst Id="KontaktDato">
+		<Referanse>11.1</Referanse>
+		<Tekst>Hvis denne sykmeldingen er tilbakedatert, oppgi dato for dokumenterbar kontakt med pasienten (Kan leses av arbeidsgiver)</Tekst>
+		<FeltType>Dato</FeltType>
+		<Mapping>KontaktMedPasient/KontaktDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="BegrunnIkkeKontakt">
+		<Referanse>11.2</Referanse>
+		<Tekst>Pasienten har ikke kunnet ivareta egne interesser. Begrunn</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Mapping>KontaktMedPasient/BegrunnIkkeKontakt</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Bekreftelse">
+		<Referanse>12</Referanse>
+		<Tekst>Bekreftelse</Tekst>
+		<FeltType>Ledetekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="BehandletDato">
+		<Referanse>12.1</Referanse>
+		<Tekst>Pasienten er kjent eller har vist legitimasjon</Tekst>
+		<FeltType>Dato</FeltType>
+		<Obligatorisk>true</Obligatorisk>
+		<Mapping>KontaktMedPasient/BehandletDato</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="BehandlerNavn">
+		<Referanse>12.2</Referanse>
+		<Tekst>Sykmelders navn</Tekst>
+		<FeltType>Tekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="BehandlerFodselsnummer">
+		<Referanse>12.3</Referanse>
+		<Tekst>Fødselsnummer</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Restriksjon>A</Restriksjon>
+		<Obligatorisk>true</Obligatorisk>
+		<Mapping>Behandler/Id/Id</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="HPRnummer">
+		<Referanse>12.4</Referanse>
+		<Tekst>HPR-nummer</Tekst>
+		<FeltType>Tekst</FeltType>
+	</Ledetekst>
+	<Ledetekst Id="Telefon">
+		<Referanse>12.5</Referanse>
+		<Tekst>Telefon</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Mapping>Behandler/KontaktInfo/TeleAdress</Mapping>
+	</Ledetekst>
+	<Ledetekst Id="Adresse">
+		<Referanse>12.6</Referanse>
+		<Tekst>Adresse</Tekst>
+		<FeltType>Tekst</FeltType>
+		<Mapping>Behandler/Adresse</Mapping>
+	</Ledetekst>
+</SM2013Ledetekst>

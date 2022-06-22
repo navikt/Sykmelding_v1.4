@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 sp1 (x64) (http://www.altova.com) by XMLSpy 2009 Enterprise Ed., Installed for 30 users (with SMP from 2009-06-19 to 2010-06-20) (NAV ØKONOMITJENESTER) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaRegel/v1" targetNamespace="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaRegel/v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="SM2013DynaRegel">
+		<xs:annotation>
+			<xs:documentation>Inneholder definisjon av regler</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="RegelSettVersjon" type="xs:string">
+					<xs:annotation>
+						<xs:documentation>Versjon av regelsett</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="DynaRegel" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Definisjon av en dynamisk regel.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Parameter" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>En regel kan ha en eller flere parametersett. Ved flere parametersett skal dette tolkes som "ELLER"</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="DiagGruppe_ICPC2" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>En kommaseparert liste med  ICPC-2 diagnosekoder, eller et regulært utrykk </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="DiagGruppe_ICD10" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>En kommaseparert liste med  ICD-10 diagnosekoder, eller et regulært utrykk </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Tidsgruppe" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>En kommaseparert liste med tidspunkt.  Et tidspunkt er oppgitt i antall dager fra start  legemeldt fravær.
+"lt" kan benyttes for mindre enn og "gt" benyttes for større enn. </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="Kjonn" type="xs:string" minOccurs="0"/>
+										<xs:element name="AldersGruppe" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>En kommaseparert liste med tidspunkt.  Et tidspunkt er oppgitt i antall år.
+"lt" kan benyttes for mindre enn og "gt" benyttes for større enn. Interval lkan oppgis som a-b som betyr at alder er større eller lik a og mindre eller lik b</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Beskrivelse" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Beskrivelse av regel. Kun for  dokumentasjon</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="navn" type="xs:string" use="required">
+							<xs:annotation>
+								<xs:documentation>Obligatorisk navn på regel. Refereres fra dynamiske spørsmål og ledetekster </xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
