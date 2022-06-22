@@ -5,36 +5,36 @@
 		<!--  ny 7 uker  -->
 		<DynaGruppe>  
 		<DynaGruppeId>6.3</DynaGruppeId>
-		<DynaGruppeTekst>Opplysninger ved vurdering av aktivitetskravet</DynaGruppeTekst>
+		<DynaGruppeTekst>Opplysninger ved vurdering av aktivitetskravet og NAVs oppfølging</DynaGruppeTekst>
 		<Beskrivelse>Utdypende opplysninger ved uke 7 (til NAVs vurdering av aktivitetskravet)</Beskrivelse>
 		<DynaRegler>UtdypendeOpplysninger1</DynaRegler>
 		<DynaSpm>
 			<DynaSpmId>6.3.1</DynaSpmId>
-			<DynaSpmTekst>Beskriv kort sykehistorie, symptomer og funn i dagens situasjon</DynaSpmTekst>
+			<DynaSpmTekst>Beskriv kort sykehistorie, symptomer og funn. Hvordan påvirker helsetilstanden funksjonen i arbeid og dagligliv?</DynaSpmTekst>
 			<Beskrivelse></Beskrivelse>
 			<Restriksjon>A</Restriksjon>
 		</DynaSpm>
 		<DynaSpm>
 			<DynaSpmId>6.3.2</DynaSpmId>
-			<DynaSpmTekst>Beskriv pågående og planlagt henvisning, utredning og/eller behandling. Lar dette seg kombinere med delvis arbeid?</DynaSpmTekst>
+			<DynaSpmTekst>Beskriv pågående og planlagt utredning og/eller behandling. Lar dette seg kombinere med delvis arbeid?</DynaSpmTekst>
 			<Beskrivelse></Beskrivelse>
 			<Restriksjon>A</Restriksjon>
 		</DynaSpm>
 	</DynaGruppe>
 	<DynaGruppe>  <!-- ny 17 uker -->
 		<DynaGruppeId>6.4</DynaGruppeId>
-		<DynaGruppeTekst>Helseopplysninger ved 17 uker</DynaGruppeTekst>
+		<DynaGruppeTekst>Helseopplysninger til NAVs videre vurdering av oppfølging</DynaGruppeTekst>
 		<Beskrivelse>Utdypende opplysninger ved uke 17 (til NAVs vurdering av oppfølgingen)</Beskrivelse>
 		<DynaRegler>UtdypendeOpplysninger2</DynaRegler>
 		<DynaSpm>
 			<DynaSpmId>6.4.1</DynaSpmId>
-			<DynaSpmTekst>Beskriv kort sykehistorie, symptomer og funn i dagens situasjon</DynaSpmTekst>
+			<DynaSpmTekst>Beskriv kort sykdomsutviklingen, symptomer og funn. Hvordan påvirker helsetilstanden funksjonen i arbeid og dagligliv?</DynaSpmTekst>
 			<Beskrivelse></Beskrivelse>
 			<Restriksjon>A</Restriksjon>
 		</DynaSpm>
 		<DynaSpm>
 			<DynaSpmId>6.4.2</DynaSpmId>
-			<DynaSpmTekst>Beskriv pågående og planlagt henvisning, utredning og/eller behandling</DynaSpmTekst>
+			<DynaSpmTekst>Beskriv pågående og planlagt utredning og/eller behandling. Lar dette seg kombinere med delvis arbeid?</DynaSpmTekst>
 			<Beskrivelse></Beskrivelse>
 			<Restriksjon>A</Restriksjon>
 		</DynaSpm>
@@ -47,33 +47,33 @@
 	</DynaGruppe>
 	<DynaGruppe>  <!-- ny 39 uker -->
 		<DynaGruppeId>6.5</DynaGruppeId>
-		<DynaGruppeTekst>Utdypende opplysninger ved 39 uker</DynaGruppeTekst>
+		<DynaGruppeTekst>Helseopplysninger til NAVs videre vurdering av oppfølging</DynaGruppeTekst>
 		<Beskrivelse>Utdypende opplysninger ved uke 39 uker (mot slutten av sykepengeperioden)</Beskrivelse>
 		<DynaRegler>UtdypendeOpplysninger3</DynaRegler>
 		<DynaSpm>
 			<DynaSpmId>6.5.1</DynaSpmId>
-			<DynaSpmTekst>Beskriv kort sykehistorie, symptomer og funn i dagens situasjon.</DynaSpmTekst>
+			<DynaSpmTekst>Beskriv kort sykdomsutviklingen, symptomer og funn. Hvordan påvirker helsetilstanden funksjonen i arbeid og dagligliv?</DynaSpmTekst>
 			<Beskrivelse></Beskrivelse>
 			<Restriksjon>A</Restriksjon>
 		</DynaSpm>
 		<DynaSpm>
 			<DynaSpmId>6.5.2</DynaSpmId>
-			<DynaSpmTekst>Hvordan påvirker dette funksjons-/arbeidsevnen?</DynaSpmTekst>
+			<DynaSpmTekst>Beskriv pågående og planlagt utredning og/eller behandling. Lar dette seg kombinere med delvis arbeid?</DynaSpmTekst>
 			<Beskrivelse></Beskrivelse>
 			<Restriksjon>A</Restriksjon>
 		</DynaSpm>
 		<DynaSpm>
 			<DynaSpmId>6.5.3</DynaSpmId>
-			<DynaSpmTekst>Beskriv pågående og planlagt henvisning, utredning og/eller medisinsk behandling</DynaSpmTekst>
-			<Beskrivelse></Beskrivelse>
-			<Restriksjon>A</Restriksjon>
-		</DynaSpm>
-		<DynaSpm>
-			<DynaSpmId>6.5.4</DynaSpmId>
 			<DynaSpmTekst>Kan arbeidsevnen bedres gjennom medisinsk behandling og/eller arbeidsrelatert aktivitet? I så fall hvordan? Angi tidsperspektiv</DynaSpmTekst>
 			<Beskrivelse></Beskrivelse>
 			<Restriksjon>A</Restriksjon>
 		</DynaSpm>
+		<!--DynaSpm>
+			<DynaSpmId>6.5.4</DynaSpmId>
+			<DynaSpmTekst>Kan arbeidsevnen bedres gjennom medisinsk behandling og/eller arbeidsrelatert aktivitet? I så fall hvordan? Angi tidsperspektiv</DynaSpmTekst>
+			<Beskrivelse></Beskrivelse>
+			<Restriksjon>A</Restriksjon>
+		</DynaSpm-->
 	</DynaGruppe>
 	<!-- ny dynagruppe AAP -->
 	<DynaGruppe>  

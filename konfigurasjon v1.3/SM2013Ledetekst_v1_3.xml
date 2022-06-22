@@ -599,19 +599,19 @@
 		<Restriksjon>A</Restriksjon>
 		<Mapping>MeldingTilNav/BeskrivBistandNAV</Mapping>
 	</Ledetekst>
-	<Ledetekst Id="MeldingTilArbeidsgiver">
+	<!--Ledetekst Id="MeldingTilArbeidsgiver">
 		<Referanse>9</Referanse>
 		<Tekst>Melding til arbeidsgiver</Tekst>
 		<FeltType>Ledetekst</FeltType>
-	</Ledetekst>
+	</Ledetekst-->
 	<Ledetekst Id="BeskrivMeldingTilArbeidsgiver">
-		<Referanse>9.1</Referanse>
+		<Referanse>9</Referanse>
 		<Tekst>Melding til arbeidsgiver</Tekst>
-		<Beskrivelse>Beskriv tilrettelegging/hensyn som bør tas på arbeidsplassen. </Beskrivelse>
 		<FeltType>Tekst</FeltType>
-		<Mapping>MeldingTilArbeidsgiver</Mapping>
+		<Beskrivelse>Beskriv tilrettelegging/hensyn som bør tas på arbeidsplassen. </Beskrivelse>
+		<Mapping>MeldingTilArbeidsgiver/BeskrivMeldingTilArbeidsgiver</Mapping>
 	</Ledetekst>
-	<Ledetekst Id="Oppfolgingsplan">
+	<!--Ledetekst Id="Oppfolgingsplan">
 		<Referanse>10</Referanse>
 		<Tekst>Oppfølgingsplan og dialogmøte 1</Tekst>
 		<FeltType>Ledetekst</FeltType>
@@ -639,7 +639,7 @@
 		<Tekst>Hvis nei, angi årsak</Tekst>
 		<FeltType>Tekst</FeltType>
 		<Mapping>Oppfolgingsplan/ArsakIkkeDeltatt</Mapping>
-	</Ledetekst>
+	</Ledetekst-->
 	<Ledetekst Id="KontaktMedPasient">
 		<Referanse>11</Referanse>
 		<Tekst>Tilbakedatering</Tekst>
@@ -654,7 +654,7 @@
 	</Ledetekst>
 	<Ledetekst Id="BegrunnIkkeKontakt">
 		<Referanse>11.2</Referanse>
-		<Tekst>Pasienten har ikke kunnet ivareta egne interesser. Begrunn</Tekst>
+		<Tekst>Begrunn årsaken til tilbakedateringen</Tekst>
 		<FeltType>Tekst</FeltType>
 		<Restriksjon>A</Restriksjon>
 		<Mapping>KontaktMedPasient/BegrunnIkkeKontakt</Mapping>
