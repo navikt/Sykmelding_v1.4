@@ -489,7 +489,7 @@ Kan legge inn HPR og HER i tillegg</documentation>
 						</sequence>
 					</complexType>
 				</element>
-				<element name="Strekkode" type="string" minOccurs="0"/>
+				<element name="Strekkode" type="string"/>
 			</sequence>
 		</complexType>
 	</element>

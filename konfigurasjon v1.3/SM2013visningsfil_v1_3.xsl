@@ -131,18 +131,18 @@
                         	<xsl:if test="$section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">  
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:UtdypendeOpplysninger" />
                         	</xsl:if>
-                        	<xsl:if test="$section != $section_claim_document">
+                        	<!--xsl:if test="$section != $section_claim_document">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:Tiltak">
                         			<xsl:with-param name="section" select="$section" />
                         			<xsl:with-param name="skjermes_for_pasient" select="$skjermes_for_pasient" />
                         		</xsl:apply-templates>
-                        	</xsl:if>
+                        	</xsl:if-->
                         	<xsl:if test="$section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:MeldingTilNav" />
                         	</xsl:if>
                         	<xsl:if test="$section != $section_claim_document">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:MeldingTilArbeidsgiver" />
-	                        	<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:Oppfolgingsplan" />
+	                        	<!--xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:Oppfolgingsplan" /-->
                         	</xsl:if>
                         	<xsl:if test="$section = $section_nav_copy or $section = $section_employer_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:KontaktMedPasient" >
@@ -161,7 +161,7 @@
                         </td>
                     </tr>
                 </tbody>
-                <!--tfoot>
+                <tfoot>
                 	<tr>
                 		<td class="barcode">
                 			<xsl:call-template name="generate_strekkode_3">
@@ -169,7 +169,7 @@
                 			</xsl:call-template>
                 		</td>
                 	</tr>
-                </tfoot-->
+                </tfoot>
             </table>
         </section>
     </xsl:template>
@@ -1275,13 +1275,13 @@
             <div class="section_letter">
             	<xsl:value-of select="$section" />
             </div>
-            <!--div class="barcode">*NEW*</div>
+            <div class="barcode">*NEW*</div>
             <div class="barcode">
             	<xsl:call-template name="generate_strekkode_2">
             		<xsl:with-param name="section_letter" select="$section" />
             		<xsl:with-param name="patient_ssn" select="ho:HelseOpplysningerArbeidsuforhet/ho:Pasient/ho:Fodselsnummer/fk1:Id" />
         		</xsl:call-template>
-            </div-->
+            </div>
         </section>
         <section class="form_heading">
             <table>
@@ -1343,7 +1343,7 @@
 			</table>
 
 			<xsl:choose>
-				<xsl:when test="ho:Aktivitet//ho:InnspillTilArbeidsgiver or ho:Tiltak/ho:TiltakArbeidsplassen or ho:MeldingTilArbeidsgiver">
+				<xsl:when test="ho:Aktivitet//ho:InnspillTilArbeidsgiver or ho:MeldingTilArbeidsgiver">
 					<h3>Informasjon til arbeidsgiver fra sykmelder</h3>
 					<h4>
 						<xsl:call-template name="ledetekst_tekst">
@@ -1356,14 +1356,14 @@
 						</xsl:for-each>
 					</ul>
 
-					<h4>
+					<!--h4>
 						<xsl:call-template name="ledetekst_tekst">
 							<xsl:with-param name="id" select="'Tiltak'" />
 						</xsl:call-template>
-					</h4>
-					<p>
+					</h4-->
+					<!--p>
 						<xsl:value-of select="ho:Tiltak/ho:TiltakArbeidsplassen" />
-					</p>
+					</p-->
 
 					<h4>
 						<xsl:call-template name="ledetekst_tekst">
@@ -1569,7 +1569,7 @@
 		<xsl:value-of select="concat(substring($dato, 9, 2), '.', substring($dato, 6, 2), '.', substring($dato, 1, 4))"/>
 	</xsl:template>
 
-	<!--xsl:template name="generate_strekkode_2">
+	<xsl:template name="generate_strekkode_2">
 		<xsl:param name="section_letter" />
 		<xsl:param name="patient_ssn" />
 		<xsl:variable name="strekkode_raw_values">
@@ -1600,11 +1600,12 @@
 			<xsl:with-param name="raw_value" select="$strekkode_raw_values" />
 		</xsl:call-template>
 		<xsl:value-of select="'*'" />
-	</xsl:template-->
+	</xsl:template>
 
-	<!--xsl:template name="generate_strekkode_3">
+	<xsl:template name="generate_strekkode_3">
 		<xsl:param name="section" />
 		<xsl:variable name="main_diagnose_code">
+			<!-- only included for sections A and B, padded with zeroes for other sections -->
 			<xsl:choose>
 				<xsl:when test="$section = 'A' or $section = 'B'">
 					<xsl:value-of select="ho:HelseOpplysningerArbeidsuforhet/ho:MedisinskVurdering/ho:HovedDiagnose/ho:Diagnosekode/@V" />
@@ -1625,34 +1626,34 @@
 			</xsl:call-template>
 		</xsl:variable>
 		<xsl:variable name="document_id_timestamp" select="substring(ho:HelseOpplysningerArbeidsuforhet/ho:Strekkode, 14, 12)" />
-		<xsl:variable name="strekkode_concatenated_values"-->
+		<xsl:variable name="strekkode_concatenated_values">
 			<!-- write document timestamp as ddMMyyhhmm -->
-			<!--xsl:value-of select="substring($document_id_timestamp, 1, 4)" />
-			<xsl:value-of select="substring($document_id_timestamp, 7, 6)" /-->
+			<xsl:value-of select="substring($document_id_timestamp, 1, 4)" />
+			<xsl:value-of select="substring($document_id_timestamp, 7, 6)" />
 			<!-- write diagnose code verbatim -->
-			<!--xsl:value-of select="$main_diagnose_code" /-->
+			<xsl:value-of select="$main_diagnose_code" />
 			<!-- write period start date as ddMMyy -->
-			<!--xsl:value-of select="substring($period_from_date, 1, 2)" />
+			<xsl:value-of select="substring($period_from_date, 1, 2)" />
 			<xsl:value-of select="substring($period_from_date, 4, 2)" />
-			<xsl:value-of select="substring($period_from_date, 9, 2)" /-->
+			<xsl:value-of select="substring($period_from_date, 9, 2)" />
 			<!-- write period end date as ddMMyy -->
-			<!--xsl:value-of select="substring($period_to_date, 1, 2)" />
+			<xsl:value-of select="substring($period_to_date, 1, 2)" />
 			<xsl:value-of select="substring($period_to_date, 4, 2)" />
 			<xsl:value-of select="substring($period_to_date, 9, 2)" />
 		</xsl:variable>
 
 		<xsl:value-of select="'*'" />
-		<xsl:value-of select="'00'" />
-		<xsl:value-of select="'0'" />
+		<xsl:value-of select="'00'" /> <!-- Subject -->
+		<xsl:value-of select="'0'" /> <!-- Logic -->
 		<xsl:value-of select="$strekkode_concatenated_values" />
-		<xsl:value-of select="'00'" />
+		<xsl:value-of select="'00'" /><!-- placeholder for page numbers (which can't be generated correctly) -->
 		<xsl:call-template name="generate_mod43_check_digit">
 			<xsl:with-param name="raw_value" select="$strekkode_concatenated_values" />
 		</xsl:call-template>
 		<xsl:value-of select="'*'" />
-	</xsl:template-->
+	</xsl:template>
 
-	<!--xsl:template name="generate_mod43_check_digit">
+	<xsl:template name="generate_mod43_check_digit">
 		<xsl:param name="raw_value" select="''" />
 		<xsl:param name="sum" select="0" />
 		<xsl:choose>
@@ -1668,6 +1669,6 @@
 				<xsl:value-of select="substring($code39_check_digits, ($sum mod 43) + 1, 1)" />
 			</xsl:otherwise>
 		</xsl:choose>
-	</xsl:template-->
+	</xsl:template>
 
 </xsl:stylesheet>
