@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MsgHead xmlns="http://www.kith.no/xmlstds/msghead/2006-05-24" xmlns:n1="http://www.altova.com/samplexml/other-namespace" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 	<MsgInfo>
-		<Type DN="Vurdering av arbeidsmulighet / sykmelding" V="SYKMELD"/>
+		<Type DN="Sykmelding" V="SYKMELD"/>
 		<MIGversion>v1.2 2006-05-24</MIGversion>
 		<GenDate>2017-09-01T11:27:30Z</GenDate>
 		<MsgId>ab90ba10-e616-11dc-95ff-0800200c9a66</MsgId>
@@ -16,14 +16,14 @@
 				<Address>
 					<StreetAdr>Dreyfushammars 23</StreetAdr>
 					<PostalCode>8012</PostalCode>
-					<City>Bodø</City>
+					<City>BodÃ¸</City>
 				</Address>
 				<HealthcareProfessional>
 					<FamilyName>Nordmann</FamilyName>
 					<GivenName>Ola</GivenName>
 					<Ident>
 						<Id>17056400109</Id>
-						<TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+						<TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 					</Ident>
 				</HealthcareProfessional>
 			</Organisation>
@@ -48,12 +48,11 @@
 					<ho:Pasient>
 						<ho:Navn>
 							<ho:Etternavn>Nordmann</ho:Etternavn>
-							<ho:Mellomnavn/>
 							<ho:Fornavn>Erik</ho:Fornavn>
 						</ho:Navn>
 						<ho:Fodselsnummer>
 							<fk1:Id>18039802631</fk1:Id>
-							<fk1:TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+							<fk1:TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 						</ho:Fodselsnummer>
 					</ho:Pasient>
 					<ho:Arbeidsgiver>
@@ -64,17 +63,17 @@
 					</ho:Arbeidsgiver>
 					<ho:MedisinskVurdering>
 						<ho:HovedDiagnose>
-							<ho:Diagnosekode DN="Tarminfeksjon" OT="oT" S="2.16.578.1.12.4.1.1.7110" V="D70"/>
+							<ho:Diagnosekode DN="Ã˜yelokkbetennelse" S="2.16.578.1.12.4.1.1.7110" V="F72"/>
 						</ho:HovedDiagnose>
 						<ho:Svangerskap>false</ho:Svangerskap>
 						<ho:Yrkesskade>false</ho:Yrkesskade>
 					</ho:MedisinskVurdering>
 					<ho:Aktivitet>
 						<ho:Periode>
-							<ho:PeriodeFOMDato>2017-09-01</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2017-09-15</ho:PeriodeTOMDato>
+							<ho:PeriodeFOMDato>2022-01-03</ho:PeriodeFOMDato>
+							<ho:PeriodeTOMDato>2022-01-10</ho:PeriodeTOMDato>
 							<ho:GradertSykmelding>
-								<ho:Sykmeldingsgrad>25</ho:Sykmeldingsgrad>
+								<ho:Sykmeldingsgrad>50</ho:Sykmeldingsgrad>
 							</ho:GradertSykmelding>
 						</ho:Periode>
 					</ho:Aktivitet>
@@ -82,34 +81,31 @@
 						<ho:ArbeidsforEtterEndtPeriode>true</ho:ArbeidsforEtterEndtPeriode>
 					</ho:Prognose>
 					<ho:KontaktMedPasient>
-						<ho:BehandletDato>2017-09-01T12:00:00</ho:BehandletDato>
+						<ho:BehandletDato>2022-01-04T12:05:20</ho:BehandletDato>
 					</ho:KontaktMedPasient>
 					<ho:Behandler>
 						<ho:Navn>
 							<ho:Etternavn>Nordmann</ho:Etternavn>
-							<ho:Mellomnavn/>
 							<ho:Fornavn>Ola</ho:Fornavn>
 						</ho:Navn>
 						<ho:Id>
 							<fk1:Id>17056400109</fk1:Id>
-							<fk1:TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+							<fk1:TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 						</ho:Id>
 						<ho:Adresse>
 							<fk1:Type DN="String" V="token"/>
 							<fk1:StreetAdr>Dreyfushammars 23</fk1:StreetAdr>
 							<fk1:PostalCode>8012</fk1:PostalCode>
-							<fk1:City>Bodø</fk1:City>
-							<fk1:Postbox>String</fk1:Postbox>
-							<fk1:County DN="dnNordland" V="vNordland"/>
-							<fk1:Country DN="dnNorge" V="vNorge"/>
+							<fk1:City>BodÃ¸</fk1:City>
+							<fk1:Postbox>255</fk1:Postbox>
+							<fk1:Country DN="Norge" V="Norge"/>
 						</ho:Adresse>
 						<ho:KontaktInfo>
-							<fk1:TypeTelecom DN="dnTypeTelecom2" V="vTelecomToken2"/>
-							<fk1:TeleAddress V="vTeleAddress2"/>
+							<fk1:TypeTelecom DN="12345678" V="WC"/>
 						</ho:KontaktInfo>
 					</ho:Behandler>
 					<ho:AvsenderSystem>
-						<ho:SystemNavn>EIA</ho:SystemNavn>
+						<ho:SystemNavn>Mitt EPJ-system</ho:SystemNavn>
 						<ho:SystemVersjon>1.0.0</ho:SystemVersjon>
 					</ho:AvsenderSystem>
 					<ho:Strekkode>strekkode1</ho:Strekkode>
