@@ -131,18 +131,18 @@
                         	<xsl:if test="$section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">  
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:UtdypendeOpplysninger" />
                         	</xsl:if>
-                        	<xsl:if test="$section != $section_claim_document">
+                        	<!--xsl:if test="$section != $section_claim_document">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:Tiltak">
                         			<xsl:with-param name="section" select="$section" />
                         			<xsl:with-param name="skjermes_for_pasient" select="$skjermes_for_pasient" />
                         		</xsl:apply-templates>
-                        	</xsl:if>
+                        	</xsl:if-->
                         	<xsl:if test="$section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:MeldingTilNav" />
                         	</xsl:if>
                         	<xsl:if test="$section != $section_claim_document">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:MeldingTilArbeidsgiver" />
-	                        	<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:Oppfolgingsplan" />
+	                        	<!--xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:Oppfolgingsplan" /-->
                         	</xsl:if>
                         	<xsl:if test="$section = $section_nav_copy or $section = $section_employer_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:KontaktMedPasient" >
@@ -169,7 +169,7 @@
                 			</xsl:call-template>
                 		</td>
                 	</tr>
-                </tfoot>          	
+                </tfoot>
             </table>
         </section>
     </xsl:template>
@@ -207,7 +207,7 @@
             		</td>
             	</tr>
 
-            	<xsl:call-template name="write_standard_table_row">
+            	<!--xsl:call-template name="write_standard_table_row">
             		<xsl:with-param name="ledetekst_id" select="'PasientTelefon'" />
             		<xsl:with-param name="value">
             			<xsl:for-each select="ho:KontaktInfo/fk1:TeleAddress">
@@ -228,7 +228,7 @@
             		<xsl:with-param name="ledetekst_id" select="'NAVKontor'" />
             		<xsl:with-param name="value" select="ho:NAVKontor" />
 					<xsl:with-param name="remove_space" select="'true'" />
-            	</xsl:call-template>
+            	</xsl:call-template!-->
             </tbody>
         </table>
     </xsl:template>
@@ -822,7 +822,7 @@
 						<xsl:with-param name="remove_space" select="'true'" />
 	        		</xsl:call-template>
 	        	</xsl:if>
-	        	<xsl:if test="ho:ErIArbeid and ($section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true'))">
+	        	<!--xsl:if test="ho:ErIArbeid and ($section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true'))">
 					<xsl:if test="ho:ErIArbeid/ho:VurderingDato != '' or ho:ErIArbeid/ho:EgetArbeidPaSikt = 'true'">
 						<xsl:call-template name="write_standard_table_row">
 							<xsl:with-param name="ledetekst_id" select="'EgetArbeidPaSikt'" />
@@ -919,7 +919,7 @@
 							<xsl:with-param name="remove_space" select="'true'" />
 						</xsl:call-template>
 					</xsl:if>
-                </xsl:if>
+                </xsl:if-->
 	        </tbody>
         </table>    	
     </xsl:template>
@@ -974,7 +974,7 @@
     	</tr>
     </xsl:template>
 
-    <xsl:template match="ho:Tiltak">
+    <!--xsl:template match="ho:Tiltak">
     	<xsl:param name="skjermes_for_pasient" />
     	<xsl:param name="section" />
 	    <table>
@@ -1016,9 +1016,9 @@
 	        	</xsl:if>
 	        </tbody>
         </table> 		
-    </xsl:template>
+    </xsl:template-->
 
-    <xsl:template match="ho:Oppfolgingsplan">
+    <!--xsl:template match="ho:Oppfolgingsplan">
 	    <table>
 	        <thead>
 	            <tr>
@@ -1065,7 +1065,7 @@
 	        	</xsl:if>
 	        </tbody>
         </table> 		
-    </xsl:template>
+    </xsl:template-->
 
     <xsl:template match="ho:MeldingTilNav">
 	    <table>
@@ -1084,13 +1084,13 @@
 	            </tr>
 	        </thead>
 	        <tbody>
-				<xsl:if test="ho:BistandNAVUmiddelbart = 'true'">
+				<!--xsl:if test="ho:BistandNAVUmiddelbart = 'true'">
 					<xsl:call-template name="write_standard_table_row">
 						<xsl:with-param name="ledetekst_id" select="'BistandNAVUmiddelbart'" />
 						<xsl:with-param name="value" select="$default_option_text_true" />
 						<xsl:with-param name="remove_space" select="'true'" />
 					</xsl:call-template>
-				</xsl:if>
+				</xsl:if-->
         		<xsl:call-template name="write_standard_table_row">
         			<xsl:with-param name="ledetekst_id" select="'BeskrivBistandNAV'" />
         			<xsl:with-param name="value" select="ho:BeskrivBistandNAV" />
@@ -1343,7 +1343,7 @@
 			</table>
 
 			<xsl:choose>
-				<xsl:when test="ho:Aktivitet//ho:InnspillTilArbeidsgiver or ho:Tiltak/ho:TiltakArbeidsplassen or ho:MeldingTilArbeidsgiver">
+				<xsl:when test="ho:Aktivitet//ho:InnspillTilArbeidsgiver or ho:MeldingTilArbeidsgiver">
 					<h3>Informasjon til arbeidsgiver fra sykmelder</h3>
 					<h4>
 						<xsl:call-template name="ledetekst_tekst">
@@ -1356,14 +1356,14 @@
 						</xsl:for-each>
 					</ul>
 
-					<h4>
+					<!--h4>
 						<xsl:call-template name="ledetekst_tekst">
 							<xsl:with-param name="id" select="'Tiltak'" />
 						</xsl:call-template>
-					</h4>
-					<p>
+					</h4-->
+					<!--p>
 						<xsl:value-of select="ho:Tiltak/ho:TiltakArbeidsplassen" />
-					</p>
+					</p-->
 
 					<h4>
 						<xsl:call-template name="ledetekst_tekst">
@@ -1606,7 +1606,7 @@
 		<xsl:param name="section" />
 		<xsl:variable name="main_diagnose_code">
 			<!-- only included for sections A and B, padded with zeroes for other sections -->
-			<xsl:choose>			
+			<xsl:choose>
 				<xsl:when test="$section = 'A' or $section = 'B'">
 					<xsl:value-of select="ho:HelseOpplysningerArbeidsuforhet/ho:MedisinskVurdering/ho:HovedDiagnose/ho:Diagnosekode/@V" />
 				</xsl:when>
@@ -1646,7 +1646,7 @@
 		<xsl:value-of select="'00'" /> <!-- Subject -->
 		<xsl:value-of select="'0'" /> <!-- Logic -->
 		<xsl:value-of select="$strekkode_concatenated_values" />
-		<xsl:value-of select="'00'" />  <!-- placeholder for page numbers (which can't be generated correctly) -->
+		<xsl:value-of select="'00'" /><!-- placeholder for page numbers (which can't be generated correctly) -->
 		<xsl:call-template name="generate_mod43_check_digit">
 			<xsl:with-param name="raw_value" select="$strekkode_concatenated_values" />
 		</xsl:call-template>
