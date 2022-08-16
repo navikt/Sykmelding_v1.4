@@ -68,7 +68,7 @@
 					</ho:Arbeidsgiver>
 					<ho:MedisinskVurdering>
 						<ho:HovedDiagnose>
-							<ho:Diagnosekode DN="Psykisk ubalanse situasjonsbetinget" OT="oT" S="2.16.578.1.12.4.1.1.7110" V="P02"/>
+							<ho:Diagnosekode DN="Utbredte muskelsmerter/fibromyalgi" S="2.16.578.1.12.4.1.1.7110" V="L18"/>
 						</ho:HovedDiagnose>
 						<ho:Svangerskap>false</ho:Svangerskap>
 						<ho:Yrkesskade>false</ho:Yrkesskade>
@@ -83,7 +83,7 @@
 						</ho:Periode>
 					</ho:Aktivitet>
 					<ho:Prognose>
-						<ho:ArbeidsforEtterEndtPeriode>true</ho:ArbeidsforEtterEndtPeriode>
+						<ho:ArbeidsforEtterEndtPeriode>false</ho:ArbeidsforEtterEndtPeriode>
 						<ho:BeskrivHensynArbeidsplassen/>
 					</ho:Prognose>
 					<ho:UtdypendeOpplysninger>
@@ -98,7 +98,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Han er litt syk ja i ca 39 uker</ho:SvarTekst>
+								<ho:SvarTekst>Pasienten har fibromyalgi og har også tidligere hatt lengre perioder med nedsatt funksjonsevne og hel/gradert sykmelding. Har effekt av å være i lett aktivitet, og noen ganger kort behandling hos fysioterapeut. Ved undersøkelse er pasienten palpasjonsøm på triggerpunkter, blant annet i bryst- og ryggmuskulatur. Pasienten er sliten og oppgitt. Han ønsker å arbeide noe, men har tidligere opplevd at bedring har tatt lengre tid om han har presset seg for mye. Han får da økte smerter og søvnvansker. Han arbeider nå 50% som snekker og det er usikkert om han klarer å komme opp i 100% innen sykepengeåret</ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.5.2</ho:SpmId>
@@ -108,7 +108,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Kan ikke jobbe</ho:SvarTekst>
+								<ho:SvarTekst>Pasienten har vært utredet og behandlet tidligere i spesialisthelsetjenesten gjennom Helse i Arbeid og opplevde nytte av dette. Sykdomstilstanden er kronisk. Regelmessige samtaler hos undertegnende med vekt på mestringsstrategier oppleves som positivt, og han er i gang med dette nå. </ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.5.3</ho:SpmId>
@@ -118,7 +118,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Skal utredes av spesialist</ho:SvarTekst>
+								<ho:SvarTekst>Delvis sykmelding gjør at han klarer å trene og være i aktivitet, som bidrar til raskere bedring. Foreløpig er 50% sykmelding nødvendig. Vi fortsetter med oppfølging hos meg. Siden han allerede har vært i tiltaket Helse i Arbeid vurderer jeg at behandling i primærhelsetjenesten samt egenaktivitet er tilstrekkelig. Jeg er usikker på hvor lang tid det vil gå før han kan arbeide fullt, og om han i det hele tatt kan arbeide fullt igjen.</ho:SvarTekst>
 							</ho:SpmSvar>
 						</ho:SpmGruppe>
 					</ho:UtdypendeOpplysninger>
