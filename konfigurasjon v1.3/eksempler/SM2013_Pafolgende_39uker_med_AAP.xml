@@ -98,7 +98,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Han er litt syk ja i ca 39 uker</ho:SvarTekst>
+								<ho:SvarTekst>Pasienten har fibromyalgi og har også tidligere hatt lengre perioder med nedsatt funksjonsevne og hel/gradert sykmelding. Har effekt av å være i lett aktivitet, og noen ganger kort behandling hos fysioterapeut. Ved undersøkelse er pasienten palpasjonsøm på triggerpunkter, blant annet i bryst- og ryggmuskulatur. Pasienten er sliten og oppgitt. Han ønsker å arbeide noe, men har tidligere opplevd at bedring har tatt lengre tid om han har presset seg for mye. Han får da økte smerter og søvnvansker. Han arbeider nå 50% som snekker og det er usikkert om han klarer å komme opp i 100% innen sykepengeåret</ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.5.2</ho:SpmId>
@@ -108,7 +108,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Kan ikke jobbe</ho:SvarTekst>
+								<ho:SvarTekst>Pasienten har vært utredet og behandlet tidligere i spesialisthelsetjenesten gjennom Helse i Arbeid og opplevde nytte av dette. Sykdomstilstanden er kronisk. Regelmessige samtaler hos undertegnende med vekt på mestringsstrategier oppleves som positivt, og han er i gang med dette nå. </ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.5.3</ho:SpmId>
@@ -118,7 +118,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Skal utredes av spesialist</ho:SvarTekst>
+								<ho:SvarTekst>Delvis sykmelding gjør at han klarer å trene og være i aktivitet, som bidrar til raskere bedring. Foreløpig er 50% sykmelding nødvendig. Vi fortsetter med oppfølging hos meg. Siden han allerede har vært i tiltaket Helse i Arbeid vurderer jeg at behandling i primærhelsetjenesten samt egenaktivitet er tilstrekkelig. Jeg er usikker på hvor lang tid det vil gå før han kan arbeide fullt, og om han i det hele tatt kan arbeide fullt igjen.</ho:SvarTekst>
 							</ho:SpmSvar>
 						</ho:SpmGruppe>
 						<ho:SpmGruppe>
@@ -132,7 +132,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Kan sitte stille i en stol</ho:SvarTekst>
+								<ho:SvarTekst>pasienten kan arbeide 50% så fremt det er noe tilrettelegging ved at andre kan bidra med tunge løft når pasienten har dårlige dager. Det er nødvendig med dialog med arbeidsgiver om tilrettelegging.</ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.6.2</ho:SpmId> 
@@ -142,7 +142,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Kan bli politiker</ho:SvarTekst>
+								<ho:SvarTekst>pasienten kan som nevnt arbeide 50%, og det er usikkert om han denne gang får bedre funksjonsevne slik at han kan arbeide mer. Pasienten har arbeidet som snekker hele livet og er 60 år. Annet arbeid vil sannsynligvis være en påkjenning som øker symptombildet. </ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.6.3</ho:SpmId>
@@ -152,7 +152,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Stor betydning til å starte med AAP</ho:SvarTekst>
+								<ho:SvarTekst>Sykdommen er kronisk og med økende alder øker også belastningen og det er alltid noe restsymptomer. Om pasienten presser seg for mye får han økte smerter, sover dårlig og det tar lengre tid før bedring intreffer. Det er i all hovedsak sykdommen som påvirker den nedsatte arbeidsevnen. </ho:SvarTekst>
 							</ho:SpmSvar>
 						</ho:SpmGruppe>
 					</ho:UtdypendeOpplysninger>
