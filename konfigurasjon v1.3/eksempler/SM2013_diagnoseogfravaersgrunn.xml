@@ -3,7 +3,7 @@
 	<MsgInfo>
 		<Type DN="Vurdering av arbeidsmulighet / sykmelding" V="SYKMELD"/>
 		<MIGversion>v1.2 2006-05-24</MIGversion>
-		<GenDate>2017-07-18T11:27:30Z</GenDate>
+		<GenDate>2022-01-03T12:07:30Z</GenDate>
 		<MsgId>ab90ba10-e616-11dc-95ff-0800200c9a66</MsgId>
 		<Sender>
 			<Organisation>
@@ -13,17 +13,21 @@
 					<Id>148985</Id>
 					<TypeId DN="Identifikator fra Helsetjenesteenhetsregisteret (HER-id)" S="2.16.578.1.12.4.1.1.8116.9051" V="HER"/>
 				</Ident>
+				<Ident>
+                  			<Id>123456789</Id>
+                  			<TypeId DN="Organisasjonsnummeret i Enhetsregister" S="2.16.578.1.12.4.1.1.9051" V="ENH"/>
+              			 </Ident>
 				<Address>
-					<StreetAdr>Dreyfushammars 23</StreetAdr>
+					<StreetAdr>Rådhusveien 22</StreetAdr>
 					<PostalCode>8012</PostalCode>
-					<City>Bod�</City>
+					<City>Bodø</City>
 				</Address>
 				<HealthcareProfessional>
 					<FamilyName>Nordmann</FamilyName>
 					<GivenName>Ola</GivenName>
 					<Ident>
 						<Id>17056400109</Id>
-						<TypeId DN="F�dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+						<TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 					</Ident>
 				</HealthcareProfessional>
 			</Organisation>
@@ -44,90 +48,71 @@
 			<Content>
 				<ho:HelseOpplysningerArbeidsuforhet xmlns:fk1="http://www.kith.no/xmlstds/felleskomponent1" xmlns:ho="http://www.kith.no/xmlstds/HelseOpplysningerArbeidsuforhet/2013-10-01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 					<ho:RegelSettVersjon>3</ho:RegelSettVersjon>
-					<ho:SyketilfelleStartDato>2017-07-18</ho:SyketilfelleStartDato>
+					<ho:SyketilfelleStartDato>2022-01-03</ho:SyketilfelleStartDato>
 					<ho:Pasient>
 						<ho:Navn>
 							<ho:Etternavn>Nordmann</ho:Etternavn>
-							<ho:Mellomnavn/>
 							<ho:Fornavn>Gry</ho:Fornavn>
 						</ho:Navn>
 						<ho:Fodselsnummer>
 							<fk1:Id>19039702498</fk1:Id>
-							<fk1:TypeId DN="F�dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+							<fk1:TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 						</ho:Fodselsnummer>
 					</ho:Pasient>
 					<ho:Arbeidsgiver>
 						<ho:HarArbeidsgiver DN="En arbeidsgiver" V="1"/>
 						<ho:NavnArbeidsgiver>Thon Hotels</ho:NavnArbeidsgiver>
-						<ho:Yrkesbetegnelse>Snekker</ho:Yrkesbetegnelse>
+						<ho:Yrkesbetegnelse>Kokk</ho:Yrkesbetegnelse>
 						<ho:Stillingsprosent>100</ho:Stillingsprosent>
 					</ho:Arbeidsgiver>
 					<ho:MedisinskVurdering>
-						<ho:HovedDiagnose>
-							<ho:Diagnosekode DN="Svangerskap/f�dsel plager IKA" OT="Svangerskapssymptomer" S="2.16.578.1.12.4.1.1.7170" V="W29"/>
-						</ho:HovedDiagnose>
-						<ho:BiDiagnoser>
-							<ho:Diagnosekode DN="Halsbrann" OT="oT" S="2.16.578.1.12.4.1.1.7170" V="D03"/>
-							<ho:Diagnosekode DN="Forstoppelse" OT="oT" S="2.16.578.1.12.4.1.1.7110" V="D12"/>
-						</ho:BiDiagnoser>
 						<ho:AnnenFraversArsak>
-							<ho:Arsakskode DN="b) n�r vedkommende er under behandling og legen erkl�rer at behandlingen gj�r det n�dvendig at vedkommende ikke arbeider" V="2" />
+							<ho:Arsakskode DN="b) når vedkommende er under behandling og legen erklærer at behandlingen gjør det nødvendig at vedkommende ikke arbeider" V="2" />
 							<ho:Beskriv>Opphold institusjon</ho:Beskriv>
 						</ho:AnnenFraversArsak>
-						<ho:Svangerskap/>
-						<ho:Yrkesskade/>
-						<ho:YrkesskadeDato>1992-10-17</ho:YrkesskadeDato>
 						<ho:SkjermesForPasient>false</ho:SkjermesForPasient>
 					</ho:MedisinskVurdering>
 					<ho:Aktivitet>
 						<ho:Periode>
-							<ho:PeriodeFOMDato>2017-07-18</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2017-07-25</ho:PeriodeTOMDato>
-							<ho:GradertSykmelding>
-								<ho:Sykmeldingsgrad>25</ho:Sykmeldingsgrad>
-							</ho:GradertSykmelding>
+							<ho:PeriodeFOMDato>2022-01-03</ho:PeriodeFOMDato>
+							<ho:PeriodeTOMDato>2022-01-17</ho:PeriodeTOMDato>
+							<ho:AktivitetIkkeMulig>
+								<ho:MedisinskeArsaker>
+									<ho:Arsakskode DN="helsetilstanden hindrer pasienten å være i aktivitet" V="A"/>
+									<ho:Beskriv>Redusert bevegelighet</ho:Beskriv>
+								</ho:MedisinskeArsaker>
+							</ho:AktivitetIkkeMulig>
 						</ho:Periode>
 					</ho:Aktivitet>
 					<ho:Prognose>
 						<ho:ArbeidsforEtterEndtPeriode>true</ho:ArbeidsforEtterEndtPeriode>
 					</ho:Prognose>
 					<ho:KontaktMedPasient>
-						<ho:BehandletDato>2017-07-18T12:00:00</ho:BehandletDato>
+						<ho:BehandletDato>2022-01-03T12:00:00</ho:BehandletDato>
 					</ho:KontaktMedPasient>
 					<ho:Behandler>
 						<ho:Navn>
 							<ho:Etternavn>Nordmann</ho:Etternavn>
-							<ho:Mellomnavn/>
 							<ho:Fornavn>Ola</ho:Fornavn>
 						</ho:Navn>
 						<ho:Id>
 							<fk1:Id>17056400109</fk1:Id>
-							<fk1:TypeId DN="F�dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
-						</ho:Id>
-						<ho:Id>
-							<fk1:Id>12345678</fk1:Id>
-							<fk1:TypeId DN="F�dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="HER"/>
-						</ho:Id>
-						<ho:Id>
-							<fk1:Id>9876544</fk1:Id>
-							<fk1:TypeId DN="F�dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="HPR"/>
+							<fk1:TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 						</ho:Id>
 						<ho:Adresse>
-							<fk1:Type DN="String" V="token"/>
-							<fk1:StreetAdr>Dreyfushammars 23</fk1:StreetAdr>
-							<fk1:PostalCode>8012</fk1:PostalCode>
-							<fk1:City>Bod�</fk1:City>
-							<fk1:Postbox>String</fk1:Postbox>
-							<fk1:County DN="dnNordland" V="vNordland"/>
-							<fk1:Country DN="dnNorge" V="vNorge"/>
+							<fk1:Type DN="Postadresse" V="PST"/>
+                        				<fk1:StreetAdr>Rådhusveien 22</fk1:StreetAdr>
+                        				<fk1:PostalCode>8012</fk1:PostalCode>
+                        				<fk1:City>BODØ</fk1:City>
+							<fk1:Country DN="Norge" V="NO"/>
 						</ho:Adresse>
 						<ho:KontaktInfo>
-							<fk1:TypeTelecom DN="dnTypeTelecom2" V="vTelecomToken2"/>
-							<fk1:TeleAddress V="vTeleAddress2"/>
-						</ho:KontaktInfo>
+                       					<fk1:TypeTelecom DN="Arbeidsplass" V="WP"/>
+							<fk1:TeleAddress V="tel:22 00 22 00"/>
+                     				</ho:KontaktInfo>
 					</ho:Behandler>
 					<ho:AvsenderSystem>
-						<ho:SystemNavn>EIA</ho:SystemNavn>
+						<ho:SystemNavn>Mitt EPJ-system</ho:SystemNavn>
 						<ho:SystemVersjon>1.0.0</ho:SystemVersjon>
 					</ho:AvsenderSystem>
 					<ho:Strekkode>00190397024981807201712000090000011</ho:Strekkode>
