@@ -3,7 +3,7 @@
 	<MsgInfo>
 		<Type DN="Vurdering av arbeidsmulighet / sykmelding" V="SYKMELD"/>
 		<MIGversion>v1.2 2006-05-24</MIGversion>
-		<GenDate>2017-08-13T11:27:30Z</GenDate>
+		<GenDate>2022-01-05T11:27:30Z</GenDate>
 		<MsgId>ab90ba10-e616-11dc-95ff-0800200c9a66</MsgId>
 		<Sender>
 			<Organisation>
@@ -13,17 +13,20 @@
 					<Id>148985</Id>
 					<TypeId DN="Identifikator fra Helsetjenesteenhetsregisteret (HER-id)" S="2.16.578.1.12.4.1.1.8116.9051" V="HER"/>
 				</Ident>
+				<Ident>
+                  			<Id>123456789</Id>
+                  			<TypeId DN="Organisasjonsnummeret i Enhetsregister" S="2.16.578.1.12.4.1.1.9051" V="ENH"/>
+              			 </Ident>
 				<Address>
-					<StreetAdr>Dreyfushammars 23</StreetAdr>
+					<StreetAdr>RÃ¥dhusveien 22</StreetAdr>
 					<PostalCode>8012</PostalCode>
-					<City>Bodø</City>
-				</Address>
+					<City>BodÃ¸</City>
 				<HealthcareProfessional>
 					<FamilyName>Nordmann</FamilyName>
 					<GivenName>Ola</GivenName>
 					<Ident>
 						<Id>17056400109</Id>
-						<TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+						<TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 					</Ident>
 				</HealthcareProfessional>
 			</Organisation>
@@ -44,7 +47,7 @@
 			<Content>
 				<ho:HelseOpplysningerArbeidsuforhet xmlns:fk1="http://www.kith.no/xmlstds/felleskomponent1" xmlns:ho="http://www.kith.no/xmlstds/HelseOpplysningerArbeidsuforhet/2013-10-01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 					<ho:RegelSettVersjon>3</ho:RegelSettVersjon>
-					<ho:SyketilfelleStartDato>2017-08-13</ho:SyketilfelleStartDato>
+					<ho:SyketilfelleStartDato>2022-01-03</ho:SyketilfelleStartDato>
 					<ho:Pasient>
 						<ho:Navn>
 							<ho:Etternavn>Danser</ho:Etternavn>
@@ -53,7 +56,7 @@
 						</ho:Navn>
 						<ho:Fodselsnummer>
 							<fk1:Id>16030052262</fk1:Id>
-							<fk1:TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+							<fk1:TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 						</ho:Fodselsnummer>
 					</ho:Pasient>
 					<ho:Arbeidsgiver>
@@ -64,51 +67,45 @@
 					</ho:Arbeidsgiver>
 					<ho:MedisinskVurdering>
 						<ho:HovedDiagnose>
-							<ho:Diagnosekode DN="Svangerskap/fødsel plager IKA" OT="Svangerskapssymptomer" S="2.16.578.1.12.4.1.1.7170" V="W29"/>
+							<ho:Diagnosekode DN="Svangerskap/fÃ¸dsel plager IKA" S="2.16.578.1.12.4.1.1.7170" V="W29"/>
 						</ho:HovedDiagnose>
 						<ho:BiDiagnoser>
-							<ho:Diagnosekode DN="Halsbrann" OT="oT" S="2.16.578.1.12.4.1.1.7170" V="D03"/>
-							<ho:Diagnosekode DN="Forstoppelse" OT="oT" S="2.16.578.1.12.4.1.1.7110" V="D12"/>
+							<ho:Diagnosekode DN="Halsbrann" S="2.16.578.1.12.4.1.1.7170" V="D03"/>
+							<ho:Diagnosekode DN="Forstoppelse" S="2.16.578.1.12.4.1.1.7110" V="D12"/>
 						</ho:BiDiagnoser>
 						<ho:Svangerskap>true</ho:Svangerskap>
 						<ho:Yrkesskade>true</ho:Yrkesskade>
-						<ho:YrkesskadeDato>2017-10-17</ho:YrkesskadeDato>
+						<ho:YrkesskadeDato>2021-12-21</ho:YrkesskadeDato>
 						<ho:SkjermesForPasient>false</ho:SkjermesForPasient>
 					</ho:MedisinskVurdering>
 					<ho:Aktivitet>
 						<ho:Periode>
-							<ho:PeriodeFOMDato>2017-05-07</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2017-07-25</ho:PeriodeTOMDato>
+							<ho:PeriodeFOMDato>2022-01-03</ho:PeriodeFOMDato>
+							<ho:PeriodeTOMDato>2022-01-19</ho:PeriodeTOMDato>
+							<!--  NB: Avventende sykmelding kan kun benyttes i arbeidsgiverperioden og kan ikke kombineres med andre perioder  -->
 							<ho:AvventendeSykmelding>
-								<ho:InnspillTilArbeidsgiver>Dette er et innspill til arbeidsgiver1</ho:InnspillTilArbeidsgiver>
+								<ho:InnspillTilArbeidsgiver>Dette er et innspill til arbeidsgiver</ho:InnspillTilArbeidsgiver>
 							</ho:AvventendeSykmelding>
 						</ho:Periode>
 						<ho:Periode>
-							<ho:PeriodeFOMDato>2017-02-12</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2017-11-30</ho:PeriodeTOMDato>
-							<ho:AvventendeSykmelding>
-								<ho:InnspillTilArbeidsgiver>Dette er et innspill til arbeidsgiver2</ho:InnspillTilArbeidsgiver>
-							</ho:AvventendeSykmelding>
-						</ho:Periode>
-						<ho:Periode>
-							<ho:PeriodeFOMDato>2017-05-19</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2017-03-15</ho:PeriodeTOMDato>
+							<ho:PeriodeFOMDato>2022-01-20</ho:PeriodeFOMDato>
+							<ho:PeriodeTOMDato>2017-01-27</ho:PeriodeTOMDato>
 							<ho:GradertSykmelding>
 								<ho:Sykmeldingsgrad>50</ho:Sykmeldingsgrad>
 								<ho:Reisetilskudd>true</ho:Reisetilskudd>
 							</ho:GradertSykmelding>
 						</ho:Periode>
 						<ho:Periode>
-							<ho:PeriodeFOMDato>2017-01-10</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2017-02-27</ho:PeriodeTOMDato>
+							<ho:PeriodeFOMDato>2022-01-28</ho:PeriodeFOMDato>
+							<ho:PeriodeTOMDato>2017-02-06</ho:PeriodeTOMDato>
 							<ho:GradertSykmelding>
 								<ho:Sykmeldingsgrad>30</ho:Sykmeldingsgrad>
 								<ho:Reisetilskudd>false</ho:Reisetilskudd>
 							</ho:GradertSykmelding>
 						</ho:Periode>
 						<ho:Periode>
-							<ho:PeriodeFOMDato>2017-09-01</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2017-02-07</ho:PeriodeTOMDato>
+							<ho:PeriodeFOMDato>2022-02-07</ho:PeriodeFOMDato>
+							<ho:PeriodeTOMDato>2022-02-27</ho:PeriodeTOMDato>
 							<ho:AktivitetIkkeMulig>
 								<ho:Arbeidsplassen>
 									<ho:Arsakskode DN="NA-5" V="Noe"/>
@@ -121,209 +118,34 @@
 							</ho:AktivitetIkkeMulig>
 						</ho:Periode>
 						<ho:Periode>
-							<ho:PeriodeFOMDato>2002-10-15</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2002-11-28</ho:PeriodeTOMDato>
-							<ho:AktivitetIkkeMulig>
-								<ho:Arbeidsplassen>
-									<!--ho:Arsakskode DN="NA-6" V="Annet"/>
-							<ho:Beskriv>Dårlig klima</ho:Beskriv-->
-								</ho:Arbeidsplassen>
-							</ho:AktivitetIkkeMulig>
-						</ho:Periode>
-						<ho:Periode>
-							<ho:PeriodeFOMDato>2003-09-01</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2005-02-07</ho:PeriodeTOMDato>
-							<ho:AktivitetIkkeMulig>
-								<ho:MedisinskeArsaker>
-									<ho:Arsakskode DN="NA-5" V="Noe"/>
-									<ho:Beskriv>aktivitet vil forverre helsetilstanden</ho:Beskriv>
-								</ho:MedisinskeArsaker>
-							</ho:AktivitetIkkeMulig>
-						</ho:Periode>
-						<ho:Periode>
-							<ho:PeriodeFOMDato>2005-04-02</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2005-07-07</ho:PeriodeTOMDato>
-							<ho:AktivitetIkkeMulig>
-								<ho:MedisinskeArsaker>
-									<ho:Arsakskode DN="NA-5" V="Noe"/>
-									<ho:Beskriv>Ikke gjennomførbart</ho:Beskriv>
-								</ho:MedisinskeArsaker>
-							</ho:AktivitetIkkeMulig>
-						</ho:Periode>
-						<ho:Periode>
-							<ho:PeriodeFOMDato>2003-09-01</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2005-02-07</ho:PeriodeTOMDato>
+							<ho:PeriodeFOMDato>2022-02-28</ho:PeriodeFOMDato>
+							<ho:PeriodeTOMDato>2022-04-24</ho:PeriodeTOMDato>
 							<ho:Behandlingsdager>
-								<ho:AntallBehandlingsdagerUke>3</ho:AntallBehandlingsdagerUke>
+								<!--  NB: Det kan kun angis 1 behandlingsdag per uke  -->
+								<ho:AntallBehandlingsdagerUke>1</ho:AntallBehandlingsdagerUke>
 							</ho:Behandlingsdager>
 						</ho:Periode>
-						<ho:Periode>
-							<ho:PeriodeFOMDato>1978-01-01</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>1990-04-13</ho:PeriodeTOMDato>
-							<ho:Behandlingsdager>
-								<ho:AntallBehandlingsdagerUke>3</ho:AntallBehandlingsdagerUke>
-							</ho:Behandlingsdager>
 						</ho:Periode>
 						<ho:Periode>
-							<ho:PeriodeFOMDato>2003-09-01</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2005-02-07</ho:PeriodeTOMDato>
-							<ho:Reisetilskudd>false</ho:Reisetilskudd>
-						</ho:Periode>		
-						<ho:Periode>
-							<ho:PeriodeFOMDato>2010-10-10</ho:PeriodeFOMDato>
-							<ho:PeriodeTOMDato>2011-11-11</ho:PeriodeTOMDato>
+							<ho:PeriodeFOMDato>2022-04-25</ho:PeriodeFOMDato>
+							<ho:PeriodeTOMDato>2022-05-22</ho:PeriodeTOMDato>
 							<ho:Reisetilskudd>true</ho:Reisetilskudd>
 						</ho:Periode>		
 					</ho:Aktivitet>
 					<ho:Prognose>
 						<ho:ArbeidsforEtterEndtPeriode>true</ho:ArbeidsforEtterEndtPeriode>
-						<ho:BeskrivHensynArbeidsplassen>Må få tilpassede arbeidsoppgaver</ho:BeskrivHensynArbeidsplassen>
+						<ho:BeskrivHensynArbeidsplassen>MÃ¥ fÃ¥ tilpassede arbeidsoppgaver</ho:BeskrivHensynArbeidsplassen>
 					</ho:Prognose>
 					<ho:UtdypendeOpplysninger>
-						<ho:SpmGruppe>
-							<ho:SpmGruppeId>6.3</ho:SpmGruppeId>
-							<ho:SpmGruppeTekst>Opplysninger ved vurdering av aktivitetskravet</ho:SpmGruppeTekst>
-							<ho:SpmSvar>
-								<ho:SpmId>6.3.1</ho:SpmId>
-								<ho:SpmTekst>Beskriv kort sykehistorie, symptomer og funn i dagens situasjon</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Hodepine og sterke smerter. Har tidligere hatt perioder med låsning i nakken</ho:SvarTekst>
-							</ho:SpmSvar>
-							<ho:SpmSvar>
-								<ho:SpmId>6.3.2</ho:SpmId>
-								<ho:SpmTekst>Beskriv pågående og planlagt henvisning, utredning og/eller behandling. Lar dette seg kombinere med delvis arbeid?</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Kan være delvis i arbeid kombinert med gjennomføring av planlagt behandling</ho:SvarTekst>
-							</ho:SpmSvar>
-						</ho:SpmGruppe>
-						<ho:SpmGruppe>
-							<ho:SpmGruppeId>6.4</ho:SpmGruppeId>
-							<ho:SpmGruppeTekst>Helseopplysninger ved 17 uker</ho:SpmGruppeTekst>
-							<ho:SpmSvar>
-								<ho:SpmId>6.4.1</ho:SpmId>
-								<ho:SpmTekst>Beskriv kort sykehistorie, symptomer og funn i dagens situasjon</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Deprimert over lang tid og det oppsår hyppige anfall på arbeidsplassen</ho:SvarTekst>
-							</ho:SpmSvar>
-							<ho:SpmSvar>
-								<ho:SpmId>6.4.2</ho:SpmId>
-								<ho:SpmTekst>Beskriv pågående og planlagt henvisning, utredning og/eller behandling</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Skal til en snarlig utredning</ho:SvarTekst>
-							</ho:SpmSvar>
-							<ho:SpmSvar>
-								<ho:SpmId>6.4.3</ho:SpmId>
-								<ho:SpmTekst>Hva mener du skal til for at pasienten kan komme tilbake i eget eller annet arbeid?</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Gjennomført behandling og oppfølging av psykolog</ho:SvarTekst>
-							</ho:SpmSvar>
-						</ho:SpmGruppe>
-						<ho:SpmGruppe>
-							<ho:SpmGruppeId>6.5</ho:SpmGruppeId>
-							<ho:SpmGruppeTekst>Utdypende opplysninger ved 39 uker</ho:SpmGruppeTekst>
-							<ho:SpmSvar>
-								<ho:SpmId>6.5.1</ho:SpmId>
-								<ho:SpmTekst>Beskriv kort sykehistorie, symptomer og funn i dagens situasjon.</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Lang sykehistorie og trenger behandling</ho:SvarTekst>
-							</ho:SpmSvar>
-							<ho:SpmSvar>
-								<ho:SpmId>6.5.2</ho:SpmId>
-								<ho:SpmTekst>Hvordan påvirker dette funksjons-/arbeidsevnen?</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Kan ikke jobbe</ho:SvarTekst>
-							</ho:SpmSvar>
-							<ho:SpmSvar>
-								<ho:SpmId>6.5.3</ho:SpmId>
-								<ho:SpmTekst>Beskriv pågående og planlagt henvisning, utredning og/eller medisinsk behandling</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Skal utredes av spesialist</ho:SvarTekst>
-							</ho:SpmSvar>
-							<ho:SpmSvar>
-								<ho:SpmId>6.5.4</ho:SpmId>
-								<ho:SpmTekst>Kan arbeidsevnen bedres gjennom medisinsk behandling og/eller arbeidsrelatert aktivitet? I så fall hvordan? Angi tidsperspektiv</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Tilskudd av koffein og karbohydrater i reseptpliktige doser kan ha effekt i en 5 måneders  horisont</ho:SvarTekst>
-							</ho:SpmSvar>
-						</ho:SpmGruppe>
-						<ho:SpmGruppe>
-							<ho:SpmGruppeId>6.6</ho:SpmGruppeId>
-							<ho:SpmGruppeTekst>Helseopplysninger dersom pasienten søker om AAP</ho:SpmGruppeTekst>
-							<ho:SpmSvar>
-								<ho:SpmId>6.6.1</ho:SpmId>
-								<ho:SpmTekst>Hva antar du at pasienten kan utføre av eget arbeid/arbeidsoppgaver i dag eller i nær framtid?</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Pasienten kan delvis utføre egne oppgaver, men må få tilpasninger</ho:SvarTekst>
-							</ho:SpmSvar>
-							<ho:SpmSvar>
-								<ho:SpmId>6.6.2</ho:SpmId> 
-								<ho:SpmTekst>Hvis pasienten ikke kan gå tilbake til eget arbeid, hva antar du at pasienten kan utføre av annet arbeid/arbeidsoppgaver?</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Administrative oppgaver</ho:SvarTekst>
-							</ho:SpmSvar>
-							<ho:SpmSvar>
-								<ho:SpmId>6.6.3</ho:SpmId>
-								<ho:SpmTekst>Hvilken betydning har denne sykdommen for den nedsatte arbeidsevnen?</ho:SpmTekst>
-								<ho:Restriksjon>
-									<ho:Restriksjonskode/>
-									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
-									<ho:Restriksjonskode/>
-								</ho:Restriksjon>
-								<ho:SvarTekst>Stor betydning og arbeidsevnen er redusert</ho:SvarTekst>
-							</ho:SpmSvar>
-						</ho:SpmGruppe>
+						<!--  Se egne eksempelfiler med utdypende opplysninger  -->
 					</ho:UtdypendeOpplysninger>
 					<ho:MeldingTilNav>
-						<ho:BeskrivBistandNAV>Hjelp fra NAV ønskes snarest</ho:BeskrivBistandNAV>
+						<ho:BeskrivBistandNAV>Hjelp fra NAV Ã¸nskes snarest</ho:BeskrivBistandNAV>
 					</ho:MeldingTilNav>
-					<ho:MeldingTilArbeidsgiver>Arbeidsgiver må prioritere pasientens behov for tilrettelagte arbeidsoppgaver!</ho:MeldingTilArbeidsgiver>
+					<ho:MeldingTilArbeidsgiver>Arbeidsgiver mÃ¥ prioritere pasientens behov for tilrettelagte arbeidsoppgaver!</ho:MeldingTilArbeidsgiver>
 					<ho:KontaktMedPasient>
-						<ho:BehandletDato>2009-01-01T15:15:15+01:00</ho:BehandletDato>
-						<ho:KontaktDato>2008-01-01</ho:KontaktDato>
+						<ho:BehandletDato>2022-01-05T11:15:15+01:00</ho:BehandletDato>
+						<ho:KontaktDato>2022-01-03</ho:KontaktDato>
 						<ho:BegrunnIkkeKontakt>Ingen kontakt</ho:BegrunnIkkeKontakt>
 					</ho:KontaktMedPasient>
 					<ho:Behandler>
