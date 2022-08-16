@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MsgHead xmlns="http://www.kith.no/xmlstds/msghead/2006-05-24" xmlns:n1="http://www.altova.com/samplexml/other-namespace" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 	<MsgInfo>
-		<Type DN="Vurdering av arbeidsmulighet / sykmelding" V="SYKMELD"/>
+		<Type DN="Sykmelding" V="SYKMELD"/>
 		<MIGversion>v1.2 2006-05-24</MIGversion>
 		<GenDate>2022-01-05T12:07:30Z</GenDate>
 		<MsgId>ab90ba10-e616-11dc-95ff-0800200c9a66</MsgId>
@@ -62,7 +62,7 @@
 					<ho:Arbeidsgiver>
 						<ho:HarArbeidsgiver DN="En arbeidsgiver" V="1"/>
 						<ho:NavnArbeidsgiver>Thon Hotels</ho:NavnArbeidsgiver>
-						<ho:Yrkesbetegnelse>Snekker</ho:Yrkesbetegnelse>
+						<ho:Yrkesbetegnelse>Sekeretær</ho:Yrkesbetegnelse>
 						<ho:Stillingsprosent>100</ho:Stillingsprosent>
 					</ho:Arbeidsgiver>
 					<ho:MedisinskVurdering>
@@ -100,7 +100,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Deprimert over lang tid og det oppsår hyppige anfall på arbeidsplassen</ho:SvarTekst>
+								<ho:SvarTekst>Deprimert i flere måneder. Angstfølelse, søvnvansker, negative tanker. Sannsynligvis har samlivsbrudd bidratt til situasjonen. Ved undersøkelse i dag har pasienten nedsatt mimikk, svarer langsomt på spørsmål med latenstid. Vurderer at pasienten har betydelig påvirket funksjonsevne, men har noe arbeidsevne og det er positivt å holde kontakt med arbeidsplassen. </ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.4.2</ho:SpmId>
@@ -110,7 +110,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Skal til en snarlig utredning</ho:SvarTekst>
+								<ho:SvarTekst>Det har vært noe langsom bedring. Vurderer fra gang til gang om det er behov for henvisning til spesialisthelsetjenesten eller oppstart av SSRI. Foreløpig har vi avventet medikamentell behandling og opprettholder regelmessige samtaletimer. Pasienten arbeider som sekretær og klarer akkurat nå 30% arbeid. </ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.4.3</ho:SpmId>
@@ -120,7 +120,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Gjennomført behandling og oppfølging av psykolog</ho:SvarTekst>
+								<ho:SvarTekst>Vurderer at den pågående behandlingen hos undertegnende med kognitiv terapi og oppfordring til å ikke isolere seg, samt kontakt med arbeidsplassen sannsynligvis vil føre til bedring. Det er noe bedring allerede. Det er usikkert hvor lang tid det vil gå før pasienten kan arbeide fullt. </ho:SvarTekst>
 							</ho:SpmSvar>
 						</ho:SpmGruppe>
 					</ho:UtdypendeOpplysninger>
