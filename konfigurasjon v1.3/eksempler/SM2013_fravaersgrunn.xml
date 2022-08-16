@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <MsgHead xmlns="http://www.kith.no/xmlstds/msghead/2006-05-24" xmlns:n1="http://www.altova.com/samplexml/other-namespace" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
 	<MsgInfo>
-		<Type DN="Vurdering av arbeidsmulighet / sykmelding" V="SYKMELD"/>
+		<Type DN="Sykmelding" V="SYKMELD"/>
 		<MIGversion>v1.2 2006-05-24</MIGversion>
 		<GenDate>2022-01-03T12:07:30Z</GenDate>
 		<MsgId>ab90ba10-e616-11dc-95ff-0800200c9a66</MsgId>
