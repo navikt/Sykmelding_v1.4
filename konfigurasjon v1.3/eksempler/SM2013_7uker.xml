@@ -100,7 +100,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Hodepine og sterke smerter. Har tidligere hatt perioder med låsning i nakken</ho:SvarTekst>
+								<ho:SvarTekst>Hodepine og sterke nakkesmerter i en uke. Har tidligere også hatt perioder med samme smertebilde. I disse periodene sterk nedsatt funksjonsevne i jobben som elektriker. Ved undersøkelse i dag svært palpasjonsøm i nakkemuskulaturen. Spurling test negativ. Symmetrisk normalt håndtrykk. Pasienten må ta mye pauser i arbeidet. Slik det er nå klarer ikke pasienten å arbeide</ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.3.2</ho:SpmId>
@@ -110,7 +110,7 @@
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Kan være delvis i arbeid kombinert med gjennomføring av planlagt behandling</ho:SvarTekst>
+								<ho:SvarTekst>Pasienten er i variert aktivitet med turer i ulent terreng, og venter på behandling hos fysioterapeut. Trenger dette for vurdering og instruksjon i øvelser. Pasienten vil på sikt kunne være i gradert arbeid men klarer ikke dette pr i dag. </ho:SvarTekst>
 							</ho:SpmSvar>
 						</ho:SpmGruppe>
 					</ho:UtdypendeOpplysninger>
