@@ -21,6 +21,7 @@
 					<StreetAdr>Rådhusveien 22</StreetAdr>
 					<PostalCode>8012</PostalCode>
 					<City>Bodø</City>
+				</Address>
 				<HealthcareProfessional>
 					<FamilyName>Nordmann</FamilyName>
 					<GivenName>Ola</GivenName>
@@ -124,7 +125,6 @@
 								<!--  NB: Det kan kun angis 1 behandlingsdag per uke  -->
 								<ho:AntallBehandlingsdagerUke>1</ho:AntallBehandlingsdagerUke>
 							</ho:Behandlingsdager>
-						</ho:Periode>
 						</ho:Periode>
 						<ho:Periode>
 							<ho:PeriodeFOMDato>2022-04-25</ho:PeriodeFOMDato>

@@ -18,16 +18,16 @@
                   			<TypeId DN="Organisasjonsnummeret i Enhetsregister" S="2.16.578.1.12.4.1.1.9051" V="ENH"/>
               			 </Ident>
 				<Address>
-					<StreetAdr>RÃ¥dhusveien 22</StreetAdr>
+					<StreetAdr>Rådhusveien 22</StreetAdr>
 					<PostalCode>8012</PostalCode>
-					<City>BodÃ¸</City>
+					<City>Bodø</City>
 				</Address>
 				<HealthcareProfessional>
 					<FamilyName>Nordmann</FamilyName>
 					<GivenName>Ola</GivenName>
 					<Ident>
 						<Id>17056400109</Id>
-						<TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+						<TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 					</Ident>
 				</HealthcareProfessional>
 			</Organisation>
@@ -57,7 +57,7 @@
 						</ho:Navn>
 						<ho:Fodselsnummer>
 							<fk1:Id>12030452028</fk1:Id>
-							<fk1:TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+							<fk1:TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 						</ho:Fodselsnummer>
 					</ho:Pasient>
 					<ho:Arbeidsgiver>
@@ -92,27 +92,27 @@
 							<ho:SpmGruppeTekst>Utdypende opplysninger ved uke 39 uker (mot slutten av sykepengeperioden)</ho:SpmGruppeTekst>
 							<ho:SpmSvar>
 								<ho:SpmId>6.5.1</ho:SpmId>
-								<ho:SpmTekst>Beskriv kort sykdomsutviklingen, symptomer og funn. Hvordan pÃ¥virker helsetilstanden funksjonen i arbeid og dagligliv?</ho:SpmTekst>
+								<ho:SpmTekst>Beskriv kort sykdomsutviklingen, symptomer og funn. Hvordan påvirker helsetilstanden funksjonen i arbeid og dagligliv?</ho:SpmTekst>
 								<ho:Restriksjon>
 									<ho:Restriksjonskode/>
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Pasienten har fibromyalgi og har ogsÃ¥ tidligere hatt lengre perioder med nedsatt funksjonsevne og hel/gradert sykmelding. Har effekt av Ã¥ vÃ¦re i lett aktivitet, og noen ganger kort behandling hos fysioterapeut. Ved undersÃ¸kelse er pasienten palpasjonsÃ¸m pÃ¥ triggerpunkter, blant annet i bryst- og ryggmuskulatur. Pasienten er sliten og oppgitt. Han Ã¸nsker Ã¥ arbeide noe, men har tidligere opplevd at bedring har tatt lengre tid om han har presset seg for mye. Han fÃ¥r da Ã¸kte smerter og sÃ¸vnvansker. Han arbeider nÃ¥ 50% som snekker og det er usikkert om han klarer Ã¥ komme opp i 100% innen sykepengeÃ¥ret</ho:SvarTekst>
+								<ho:SvarTekst>Pasienten har fibromyalgi og har også tidligere hatt lengre perioder med nedsatt funksjonsevne og hel/gradert sykmelding. Har effekt av å være i lett aktivitet, og noen ganger kort behandling hos fysioterapeut. Ved undersøkelse er pasienten palpasjonsøm på triggerpunkter, blant annet i bryst- og ryggmuskulatur. Pasienten er sliten og oppgitt. Han ønsker å arbeide noe, men har tidligere opplevd at bedring har tatt lengre tid om han har presset seg for mye. Han får da økte smerter og søvnvansker. Han arbeider nå 50% som snekker og det er usikkert om han klarer å komme opp i 100% innen sykepengeåret</ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.5.2</ho:SpmId>
-								<ho:SpmTekst>Beskriv pÃ¥gÃ¥ende og planlagt utredning og/eller behandling. Lar dette seg kombinere med delvis arbeid?</ho:SpmTekst>
+								<ho:SpmTekst>Beskriv pågående og planlagt utredning og/eller behandling. Lar dette seg kombinere med delvis arbeid?</ho:SpmTekst>
 								<ho:Restriksjon>
 									<ho:Restriksjonskode/>
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Pasienten har vÃ¦rt utredet og behandlet tidligere i spesialisthelsetjenesten gjennom Helse i Arbeid og opplevde nytte av dette. Sykdomstilstanden er kronisk. Regelmessige samtaler hos undertegnende med vekt pÃ¥ mestringsstrategier oppleves som positivt, og han er i gang med dette nÃ¥. </ho:SvarTekst>
+								<ho:SvarTekst>Pasienten har vært utredet og behandlet tidligere i spesialisthelsetjenesten gjennom Helse i Arbeid og opplevde nytte av dette. Sykdomstilstanden er kronisk. Regelmessige samtaler hos undertegnende med vekt på mestringsstrategier oppleves som positivt, og han er i gang med dette nå. </ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.5.3</ho:SpmId>
-								<ho:SpmTekst>Kan arbeidsevnen bedres gjennom medisinsk behandling og/eller arbeidsrelatert aktivitet? I sÃ¥ fall hvordan? Angi tidsperspektiv</ho:SpmTekst>
+								<ho:SpmTekst>Kan arbeidsevnen bedres gjennom medisinsk behandling og/eller arbeidsrelatert aktivitet? I så fall hvordan? Angi tidsperspektiv</ho:SpmTekst>
 								<ho:Restriksjon>
 									<ho:Restriksjonskode/>
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
@@ -130,14 +130,14 @@
 							<ho:Etternavn>Nordmann</ho:Etternavn>
 							<ho:Fornavn>Ola</ho:Fornavn>
 						</ho:Navn>
-						<ho:Ident>
-              						<fk1:Id>9999999</Id>
+						<ho:Id>
+              						<fk1:Id>9999999</fk1:Id>
               						<fk1:TypeId DN="HPR-nummer" S="2.16.578.1.12.4.1.1.8116" V="HPR"/>
-            					</ho:Ident>
-						<ho:Ident>
-							<fk1:Id>17056400109</Id>
+            					</ho:Id>
+						<ho:Id>
+							<fk1:Id>17056400109</fk1:Id>
 							<fk1:TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
-						</ho:Ident>
+						</ho:Id>
 						<ho:Adresse>
 							<fk1:Type DN="Postadresse" V="PST"/>
                         				<fk1:StreetAdr>RÃ¥dhusveien 22</fk1:StreetAdr>

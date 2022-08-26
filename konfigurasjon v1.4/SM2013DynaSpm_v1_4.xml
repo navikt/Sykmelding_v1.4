@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SM2013DynaSpm xsi:schemaLocation="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaSpm/v1 SM2013DynaSpm.xsd" xmlns="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaSpm/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<SM2013DynaSpm xsi:schemaLocation="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaSpm/v1 xsd/SM2013DynaSpm.xsd" xmlns="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaSpm/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<RegelSettVersjon>3</RegelSettVersjon>
 		<!--  7 uker  -->
 		<DynaGruppe>  

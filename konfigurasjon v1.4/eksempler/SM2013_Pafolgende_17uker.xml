@@ -18,16 +18,16 @@
                   			<TypeId DN="Organisasjonsnummeret i Enhetsregister" S="2.16.578.1.12.4.1.1.9051" V="ENH"/>
               			 </Ident>
 				<Address>
-					<StreetAdr>RÃ¥dhusveien 22</StreetAdr>
+					<StreetAdr>Rådhusveien 22</StreetAdr>
 					<PostalCode>8012</PostalCode>
-					<City>BodÃ¸</City>
+					<City>Bodø</City>
 				</Address>
 				<HealthcareProfessional>
 					<FamilyName>Nordmann</FamilyName>
 					<GivenName>Ola</GivenName>
 					<Ident>
 						<Id>17056400109</Id>
-						<TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+						<TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 					</Ident>
 				</HealthcareProfessional>
 			</Organisation>
@@ -56,13 +56,13 @@
 						</ho:Navn>
 						<ho:Fodselsnummer>
 							<fk1:Id>17039902028</fk1:Id>
-							<fk1:TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+							<fk1:TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
 						</ho:Fodselsnummer>
 					</ho:Pasient>
 					<ho:Arbeidsgiver>
 						<ho:HarArbeidsgiver DN="En arbeidsgiver" V="1"/>
 						<ho:NavnArbeidsgiver>Thon Hotels</ho:NavnArbeidsgiver>
-						<ho:Yrkesbetegnelse>SekeretÃ¦r</ho:Yrkesbetegnelse>
+						<ho:Yrkesbetegnelse>Sekeretær</ho:Yrkesbetegnelse>
 						<ho:Stillingsprosent>100</ho:Stillingsprosent>
 					</ho:Arbeidsgiver>
 					<ho:MedisinskVurdering>
@@ -78,8 +78,8 @@
 							<ho:PeriodeTOMDato>2022-07-28</ho:PeriodeTOMDato>
 							<ho:AktivitetIkkeMulig>
 								<ho:MedisinskeArsaker>
-									<ho:Arsakskode DN="helsetilstanden hindrer pasienten Ã¥ vÃ¦re i aktivitet" V="A"/>
-									<ho:Beskriv>Det er ikke mulig Ã¥ gjennomfÃ¸re planlagt arbeid</ho:Beskriv>
+									<ho:Arsakskode DN="helsetilstanden hindrer pasienten å være i aktivitet" V="A"/>
+									<ho:Beskriv>Det er ikke mulig å gjennomføre planlagt arbeid</ho:Beskriv>
 								</ho:MedisinskeArsaker>
 							</ho:AktivitetIkkeMulig>
 						</ho:Periode>
@@ -91,26 +91,26 @@
 					<ho:UtdypendeOpplysninger>
 						<ho:SpmGruppe>
 							<ho:SpmGruppeId>6.4</ho:SpmGruppeId>
-							<ho:SpmGruppeTekst>Utdypende opplysninger ved uke 17 (til NAVs vurdering av oppfÃ¸lgingen)</ho:SpmGruppeTekst>
+							<ho:SpmGruppeTekst>Utdypende opplysninger ved uke 17 (til NAVs vurdering av oppfølgingen)</ho:SpmGruppeTekst>
 							<ho:SpmSvar>
 								<ho:SpmId>6.4.1</ho:SpmId>
-								<ho:SpmTekst>Beskriv kort sykdomsutviklingen, symptomer og funn. Hvordan pÃ¥virker helsetilstanden funksjonen i arbeid og dagligliv?</ho:SpmTekst>
+								<ho:SpmTekst>Beskriv kort sykdomsutviklingen, symptomer og funn. Hvordan påvirker helsetilstanden funksjonen i arbeid og dagligliv?</ho:SpmTekst>
 								<ho:Restriksjon>
 									<ho:Restriksjonskode/>
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Deprimert i flere mÃ¥neder. AngstfÃ¸lelse, sÃ¸vnvansker, negative tanker. Sannsynligvis har samlivsbrudd bidratt til situasjonen. Ved undersÃ¸kelse i dag har pasienten nedsatt mimikk, svarer langsomt pÃ¥ spÃ¸rsmÃ¥l med latenstid. Vurderer at pasienten har betydelig pÃ¥virket funksjonsevne, men har noe arbeidsevne og det er positivt Ã¥ holde kontakt med arbeidsplassen. </ho:SvarTekst>
+								<ho:SvarTekst>Deprimert i flere måneder. Angstfølelse, søvnvansker, negative tanker. Sannsynligvis har samlivsbrudd bidratt til situasjonen. Ved undersøkelse i dag har pasienten nedsatt mimikk, svarer langsomt på spørsmål med latenstid. Vurderer at pasienten har betydelig påvirket funksjonsevne, men har noe arbeidsevne og det er positivt å holde kontakt med arbeidsplassen. </ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.4.2</ho:SpmId>
-								<ho:SpmTekst>Beskriv pÃ¥gÃ¥ende og planlagt utredning og/eller behandling. Lar dette seg kombinere med delvis arbeid?</ho:SpmTekst>
+								<ho:SpmTekst>Beskriv pågående og planlagt utredning og/eller behandling. Lar dette seg kombinere med delvis arbeid?</ho:SpmTekst>
 								<ho:Restriksjon>
 									<ho:Restriksjonskode/>
 									<ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
 									<ho:Restriksjonskode/>
 								</ho:Restriksjon>
-								<ho:SvarTekst>Det har vÃ¦rt noe langsom bedring. Vurderer fra gang til gang om det er behov for henvisning til spesialisthelsetjenesten eller oppstart av SSRI. ForelÃ¸pig har vi avventet medikamentell behandling og opprettholder regelmessige samtaletimer. Pasienten arbeider som sekretÃ¦r og klarer akkurat nÃ¥ 30% arbeid. </ho:SvarTekst>
+								<ho:SvarTekst>Det har vært noe langsom bedring. Vurderer fra gang til gang om det er behov for henvisning til spesialisthelsetjenesten eller oppstart av SSRI. Foreløpig har vi avventet medikamentell behandling og opprettholder regelmessige samtaletimer. Pasienten arbeider som sekretær og klarer akkurat nå 30% arbeid. </ho:SvarTekst>
 							</ho:SpmSvar>
 							<ho:SpmSvar>
 								<ho:SpmId>6.4.3</ho:SpmId>
@@ -132,14 +132,14 @@
 							<ho:Etternavn>Nordmann</ho:Etternavn>
 							<ho:Fornavn>Ola</ho:Fornavn>
 						</ho:Navn>
-						<ho:Ident>
-              						<fk1:Id>9999999</Id>
+						<ho:Id>
+              						<fk1:Id>9999999</fk1:Id>
               						<fk1:TypeId DN="HPR-nummer" S="2.16.578.1.12.4.1.1.8116" V="HPR"/>
-            					</ho:Ident>
-						<ho:Ident>
-							<fk1:Id>17056400109</Id>
+            					</ho:Id>
+						<ho:Id>
+							<fk1:Id>17056400109</fk1:Id>
 							<fk1:TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
-						</ho:Ident>
+						</ho:Id>
 						<ho:Adresse>
 							<fk1:Type DN="Postadresse" V="PST"/>
                         				<fk1:StreetAdr>RÃ¥dhusveien 22</fk1:StreetAdr>

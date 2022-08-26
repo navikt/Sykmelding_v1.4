@@ -96,14 +96,14 @@
 							<ho:Etternavn>Nordmann</ho:Etternavn>
 							<ho:Fornavn>Ola</ho:Fornavn>
 						</ho:Navn>
-						<ho:Ident>
-              						<fk1:Id>9999999</Id>
+						<ho:Id>
+              						<fk1:Id>9999999</fk1:Id>
               						<fk1:TypeId DN="HPR-nummer" S="2.16.578.1.12.4.1.1.8116" V="HPR"/>
-            					</ho:Ident>
-						<ho:Ident>
-							<fk1:Id>17056400109</Id>
+            					</ho:Id>
+						<ho:Id>
+							<fk1:Id>17056400109</fk1:Id>
 							<fk1:TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
-						</ho:Ident>
+						</ho:Id>
 						<ho:Adresse>
 							<fk1:Type DN="Postadresse" V="PST"/>
                         				<fk1:StreetAdr>Rådhusveien 22</fk1:StreetAdr>
