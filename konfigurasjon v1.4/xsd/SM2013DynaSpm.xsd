@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2010 rel. 3 sp1 (x64) (http://www.altova.com) by XMLSpy 2009 Enterprise Ed., Installed for 30 users (with SMP from 2009-06-19 to 2010-06-20) (NAV ØKONOMITJENESTER) -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaSpm/v1" targetNamespace="http://nav.no/dokument/ekstern/sykmelding/dynamiskregelsett/SM2013DynaSpm/v1" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<xs:element name="SM2013DynaSpm">
 		<xs:annotation>

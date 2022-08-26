@@ -131,18 +131,11 @@
                         	<xsl:if test="$section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">  
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:UtdypendeOpplysninger" />
                         	</xsl:if>
-                        	<!--xsl:if test="$section != $section_claim_document">
-                        		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:Tiltak">
-                        			<xsl:with-param name="section" select="$section" />
-                        			<xsl:with-param name="skjermes_for_pasient" select="$skjermes_for_pasient" />
-                        		</xsl:apply-templates>
-                        	</xsl:if-->
                         	<xsl:if test="$section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:MeldingTilNav" />
                         	</xsl:if>
                         	<xsl:if test="$section != $section_claim_document">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:MeldingTilArbeidsgiver" />
-	                        	<!--xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:Oppfolgingsplan" /-->
                         	</xsl:if>
                         	<xsl:if test="$section = $section_nav_copy or $section = $section_employer_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">
                         		<xsl:apply-templates select="ho:HelseOpplysningerArbeidsuforhet/ho:KontaktMedPasient" >
@@ -206,29 +199,6 @@
         				<xsl:apply-templates select="ho:Navn" mode="patient"/>
             		</td>
             	</tr>
-
-            	<!--xsl:call-template name="write_standard_table_row">
-            		<xsl:with-param name="ledetekst_id" select="'PasientTelefon'" />
-            		<xsl:with-param name="value">
-            			<xsl:for-each select="ho:KontaktInfo/fk1:TeleAddress">
-            				<xsl:if test="position() > 1">
-            					<xsl:value-of select="', '" />
-            				</xsl:if>
-            				<xsl:value-of select="substring-after(./@V, 'tel:')" />
-            			</xsl:for-each>
-            		</xsl:with-param>
-					<xsl:with-param name="remove_space" select="'true'" />
-            	</xsl:call-template>
-            	<xsl:call-template name="write_standard_table_row">
-            		<xsl:with-param name="ledetekst_id" select="'NavnFastlege'" />
-            		<xsl:with-param name="value" select="ho:NavnFastlege" />
-					<xsl:with-param name="remove_space" select="'true'" />
-            	</xsl:call-template>
-            	<xsl:call-template name="write_standard_table_row">
-            		<xsl:with-param name="ledetekst_id" select="'NAVKontor'" />
-            		<xsl:with-param name="value" select="ho:NAVKontor" />
-					<xsl:with-param name="remove_space" select="'true'" />
-            	</xsl:call-template!-->
             </tbody>
         </table>
     </xsl:template>
@@ -822,104 +792,6 @@
 						<xsl:with-param name="remove_space" select="'true'" />
 	        		</xsl:call-template>
 	        	</xsl:if>
-	        	<!--xsl:if test="ho:ErIArbeid and ($section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true'))">
-					<xsl:if test="ho:ErIArbeid/ho:VurderingDato != '' or ho:ErIArbeid/ho:EgetArbeidPaSikt = 'true'">
-						<xsl:call-template name="write_standard_table_row">
-							<xsl:with-param name="ledetekst_id" select="'EgetArbeidPaSikt'" />
-							<xsl:with-param name="value">
-								<xsl:choose>
-									<xsl:when test="ho:ErIArbeid/ho:EgetArbeidPaSikt = 'true'">
-										<xsl:value-of select="$default_option_text_true" />
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:value-of select="$default_option_text_empty" />
-									</xsl:otherwise>
-								</xsl:choose>
-							</xsl:with-param>
-							<xsl:with-param name="remove_space" select="'false'" />
-						</xsl:call-template>
-					</xsl:if>
-					<xsl:if test="ho:ErIArbeid/ho:ArbeidFraDato != '' and ho:ErIArbeid/ho:EgetArbeidPaSikt = 'true'">
-						<xsl:call-template name="write_standard_table_row">
-							<xsl:with-param name="ledetekst_id" select="'ArbeidFraDato'" />
-							<xsl:with-param name="value">
-								<xsl:call-template name="formater_dato">
-									<xsl:with-param name="dato" select="ho:ErIArbeid/ho:ArbeidFraDato" />
-								</xsl:call-template>
-							</xsl:with-param>
-							<xsl:with-param name="remove_space" select="'true'" />
-						</xsl:call-template>
-					</xsl:if>
-					<xsl:if test="ho:ErIArbeid/ho:VurderingDato != '' or ho:ErIArbeid/ho:AnnetArbeidPaSikt = 'true'">
-						<xsl:call-template name="write_standard_table_row">
-							<xsl:with-param name="ledetekst_id" select="'AnnetArbeidPaSikt'" />
-							<xsl:with-param name="value">
-								<xsl:choose>
-									<xsl:when test="ho:ErIArbeid/ho:AnnetArbeidPaSikt = 'true'">
-										<xsl:value-of select="$default_option_text_true" />
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:value-of select="$default_option_text_empty" />
-									</xsl:otherwise>
-								</xsl:choose>
-							</xsl:with-param>
-							<xsl:with-param name="remove_space" select="'false'" />
-						</xsl:call-template>
-					</xsl:if>
-					<xsl:if test="ho:ErIArbeid/ho:VurderingDato != ''">
-						<xsl:if test="$section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true')">
-							<xsl:call-template name="write_standard_table_row">
-								<xsl:with-param name="ledetekst_id" select="'ErIArbeidVurderingDato'" />
-								<xsl:with-param name="value">
-									<xsl:call-template name="formater_dato">
-										<xsl:with-param name="dato" select="ho:ErIArbeid/ho:VurderingDato" />
-									</xsl:call-template>
-								</xsl:with-param>
-								<xsl:with-param name="remove_space" select="'true'" />
-							</xsl:call-template>
-						</xsl:if>
-					</xsl:if>
-	        	</xsl:if>
-                <xsl:if test="ho:ErIkkeIArbeid and ($section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true'))">
-                    <xsl:if test="ho:ErIkkeIArbeid/ho:VurderingDato != '' or ho:ErIkkeIArbeid/ho:ArbeidsforPaSikt = 'true'">
-						<xsl:call-template name="write_standard_table_row">
-							<xsl:with-param name="ledetekst_id" select="'ArbeidsforPaSikt'" />
-							<xsl:with-param name="value">
-								<xsl:choose>
-									<xsl:when test="ho:ErIkkeIArbeid/ho:ArbeidsforPaSikt = 'true'">
-										<xsl:value-of select="$default_option_text_true" />
-									</xsl:when>
-									<xsl:otherwise>
-										<xsl:value-of select="$default_option_text_empty" />
-									</xsl:otherwise>
-								</xsl:choose>
-							</xsl:with-param>
-							<xsl:with-param name="remove_space" select="'false'" />
-						</xsl:call-template>
-					</xsl:if>
-					<xsl:if test="ho:ErIkkeIArbeid/ho:ArbeidsforFraDato != '' and ho:ErIkkeIArbeid/ho:ArbeidsforPaSikt = 'true'">
-						<xsl:call-template name="write_standard_table_row">
-							<xsl:with-param name="ledetekst_id" select="'ArbeidsforFraDato'" />
-							<xsl:with-param name="value">
-								<xsl:call-template name="formater_dato">
-									<xsl:with-param name="dato" select="ho:ErIkkeIArbeid/ho:ArbeidsforFraDato" />
-								</xsl:call-template>
-							</xsl:with-param>
-							<xsl:with-param name="remove_space" select="'true'" />
-						</xsl:call-template>
-					</xsl:if>
-					<xsl:if test="ho:ErIkkeIArbeid/ho:VurderingDato != ''">
-						<xsl:call-template name="write_standard_table_row">
-							<xsl:with-param name="ledetekst_id" select="'ErIkkeIArbeidVurderingDato'" />
-							<xsl:with-param name="value">
-								<xsl:call-template name="formater_dato">
-									<xsl:with-param name="dato" select="ho:ErIkkeIArbeid/ho:VurderingDato" />
-								</xsl:call-template>
-							</xsl:with-param>
-							<xsl:with-param name="remove_space" select="'true'" />
-						</xsl:call-template>
-					</xsl:if>
-                </xsl:if-->
 	        </tbody>
         </table>    	
     </xsl:template>
@@ -974,99 +846,6 @@
     	</tr>
     </xsl:template>
 
-    <!--xsl:template match="ho:Tiltak">
-    	<xsl:param name="skjermes_for_pasient" />
-    	<xsl:param name="section" />
-	    <table>
-	        <thead>
-	            <tr>
-	                <th>
-	                	<xsl:call-template name="ledetekst_ref">
-	                		<xsl:with-param name="id" select="'Tiltak'" />
-	                	</xsl:call-template>
-	                </th>
-	                <th colspan="2">
-	                	<xsl:call-template name="ledetekst_tekst">
-	                		<xsl:with-param name="id" select="'Tiltak'" />
-	                	</xsl:call-template>
-	                </th>
-	            </tr>
-	        </thead>
-	        <tbody>
-	        	<xsl:if test="ho:TiltakArbeidsplassen">
-	        		<xsl:call-template name="write_standard_table_row">
-	        			<xsl:with-param name="ledetekst_id" select="'TiltakArbeidsplassen'" />
-	        			<xsl:with-param name="value" select="ho:TiltakArbeidsplassen" />
-						<xsl:with-param name="remove_space" select="'true'" />
-	        		</xsl:call-template>
-	        	</xsl:if>
-	        	<xsl:if test="ho:TiltakNAV and ($section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true'))">
-	        		<xsl:call-template name="write_standard_table_row">
-	        			<xsl:with-param name="ledetekst_id" select="'TiltakNAV'" />
-	        			<xsl:with-param name="value" select="ho:TiltakNAV" />
-						<xsl:with-param name="remove_space" select="'true'" />
-	        		</xsl:call-template>
-	        	</xsl:if>
-	        	<xsl:if test="ho:AndreTiltak and ($section = $section_nav_copy or ($section = $section_patient_copy and $skjermes_for_pasient != 'true'))">
-	        		<xsl:call-template name="write_standard_table_row">
-	        			<xsl:with-param name="ledetekst_id" select="'AndreTiltak'" />
-	        			<xsl:with-param name="value" select="ho:AndreTiltak" />
-						<xsl:with-param name="remove_space" select="'true'" />
-	        		</xsl:call-template>
-	        	</xsl:if>
-	        </tbody>
-        </table> 		
-    </xsl:template-->
-
-    <!--xsl:template match="ho:Oppfolgingsplan">
-	    <table>
-	        <thead>
-	            <tr>
-	                <th>
-	                	<xsl:call-template name="ledetekst_ref">
-	                		<xsl:with-param name="id" select="'Oppfolgingsplan'" />
-	                	</xsl:call-template>
-	                </th>
-	                <th colspan="2">
-	                	<xsl:call-template name="ledetekst_tekst">
-	                		<xsl:with-param name="id" select="'Oppfolgingsplan'" />
-	                	</xsl:call-template>
-	                </th>
-	            </tr>
-	        </thead>
-	        <tbody>
-				<xsl:if test="ho:MottattOppfolgingsplan = 'true'">
-					<xsl:call-template name="write_standard_table_row">
-						<xsl:with-param name="ledetekst_id" select="'MottattOppfolgingsplan'" />
-						<xsl:with-param name="value" select="$default_option_text_true" />
-						<xsl:with-param name="remove_space" select="'true'" />
-					</xsl:call-template>
-				</xsl:if>
-				<xsl:if test="ho:InnkaltDialogmote1 = 'true'">
-					<xsl:call-template name="write_standard_table_row">
-						<xsl:with-param name="ledetekst_id" select="'InnkaltDialogmote1'" />
-						<xsl:with-param name="value" select="$default_option_text_true" />
-						<xsl:with-param name="remove_space" select="'true'" />
-					</xsl:call-template>
-				</xsl:if>
-				<xsl:if test="ho:DeltattDialogmote1 = 'true'">
-					<xsl:call-template name="write_standard_table_row">
-						<xsl:with-param name="ledetekst_id" select="'DeltattDialogmote1'" />
-						<xsl:with-param name="value" select="$default_option_text_true" />
-						<xsl:with-param name="remove_space" select="'true'" />
-					</xsl:call-template>
-				</xsl:if>
-	        	<xsl:if test="ho:DeltattDialogmote1 != 'true'">
-	        		<xsl:call-template name="write_standard_table_row">
-	        			<xsl:with-param name="ledetekst_id" select="'ArsakIkkeDeltatt'" />
-	        			<xsl:with-param name="value" select="ho:ArsakIkkeDeltatt" />
-						<xsl:with-param name="remove_space" select="'true'" />
-	        		</xsl:call-template>
-	        	</xsl:if>
-	        </tbody>
-        </table> 		
-    </xsl:template-->
-
     <xsl:template match="ho:MeldingTilNav">
 	    <table>
 	        <thead>
@@ -1084,13 +863,6 @@
 	            </tr>
 	        </thead>
 	        <tbody>
-				<!--xsl:if test="ho:BistandNAVUmiddelbart = 'true'">
-					<xsl:call-template name="write_standard_table_row">
-						<xsl:with-param name="ledetekst_id" select="'BistandNAVUmiddelbart'" />
-						<xsl:with-param name="value" select="$default_option_text_true" />
-						<xsl:with-param name="remove_space" select="'true'" />
-					</xsl:call-template>
-				</xsl:if-->
         		<xsl:call-template name="write_standard_table_row">
         			<xsl:with-param name="ledetekst_id" select="'BeskrivBistandNAV'" />
         			<xsl:with-param name="value" select="ho:BeskrivBistandNAV" />
@@ -1355,15 +1127,6 @@
 							<li><xsl:value-of select="." /></li>
 						</xsl:for-each>
 					</ul>
-
-					<!--h4>
-						<xsl:call-template name="ledetekst_tekst">
-							<xsl:with-param name="id" select="'Tiltak'" />
-						</xsl:call-template>
-					</h4-->
-					<!--p>
-						<xsl:value-of select="ho:Tiltak/ho:TiltakArbeidsplassen" />
-					</p-->
 
 					<h4>
 						<xsl:call-template name="ledetekst_tekst">

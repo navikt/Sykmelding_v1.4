@@ -97,25 +97,6 @@
 		<Obligatorisk>true</Obligatorisk>
 		<Mapping>Pasient/Fodselsnummer/Id</Mapping>
 	</Ledetekst>
-<!--	<Ledetekst Id="PasientTelefon">
-		<Referanse>1.3</Referanse>
-		<Tekst>Telefon</Tekst>
-		<FeltType>Tekst</FeltType>
-		<Mapping>Pasient/KontaktInfo/TeleAddress</Mapping>
-	</Ledetekst>  -->
-<!--	<Ledetekst Id="NavnFastlege">
-		<Referanse>1.4</Referanse>
-		<Tekst>Navn på pasientens fastlege</Tekst>
-		<FeltType>Tekst</FeltType>
-		<Mapping>Pasient/NavnFastlege</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="NAVKontor">
-		<Referanse>1.5</Referanse>
-		<Tekst>NAV-kontor</Tekst>
-		<FeltType>Tekst</FeltType>
-		<Beskrivelse>NAV-kontoret pasienten tilhører.</Beskrivelse>
-		<Mapping>Pasient/NAVkontor</Mapping>
-	</Ledetekst>-->
 	<Ledetekst Id="Arbeidsgiver">
 		<Referanse>2</Referanse>
 		<Tekst>Arbeidsgiver</Tekst>
@@ -492,105 +473,12 @@
 		<FeltType>Tekst</FeltType>
 		<Mapping>Prognose/BeskrivHensynArbeidsplassen</Mapping>
 	</Ledetekst>
-<!--	<Ledetekst Id="EgetArbeidPaSikt">
-		<Referanse>5.2.1</Referanse>
-		<Tekst>Jeg antar at pasienten på sikt kan komme tilbake til samme arbeidsgiver</Tekst>
-		<FeltType>Sjekkboks</FeltType>
-		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
-		<Mapping>Prognose/ErIArbeid/EgetArbeidPaSikt</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="ArbeidFraDato">
-		<Referanse>5.2.1.1</Referanse>
-		<Tekst>Anslå når du tror dette kan skje</Tekst>
-		<FeltType>Dato</FeltType>
-		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
-		<Mapping>Prognose/ErIArbeid/ArbeidFraDato</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="AnnetArbeidPaSikt">
-		<Referanse>5.2.2</Referanse>
-		<Tekst>Jeg antar at pasienten på sikt kan komme i arbeid hos annen arbeidsgiver</Tekst>
-		<FeltType>Sjekkboks</FeltType>
-		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
-		<Mapping>Prognose/ErIArbeid/AnnetArbeidPaSikt</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="ErIArbeidVurderingDato">
-		<Referanse>5.2.3</Referanse>
-		<Tekst>Hvis usikker: Når antar du å kunne gi tilbakemelding på dette?</Tekst>
-		<FeltType>Dato</FeltType>
-		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
-		<Restriksjon>A</Restriksjon>
-		<Mapping>Prognose/ErIArbeid/VurderingDato</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="ArbeidsforPaSikt">
-		<Referanse>5.3.1</Referanse>
-		<Tekst>Jeg antar at pasienten på sikt kan komme tilbake i arbeid</Tekst>
-		<FeltType>Sjekkboks</FeltType>
-		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
-		<Restriksjon>A</Restriksjon>
-		<Mapping>Prognose/ErIkkeIArbeid/ArbeidsforPaSikt</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="ArbeidsforFraDato">
-		<Referanse>5.3.1.1</Referanse>
-		<Tekst>Anslå når du tror dette kan skje</Tekst>
-		<FeltType>Dato</FeltType>
-		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
-		<Restriksjon>A</Restriksjon>
-		<Mapping>Prognose/ErIkkeIArbeid/ArbeidsforFraDato</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="ErIkkeIArbeidVurderingDato">
-		<Referanse>5.3.2</Referanse>
-		<Tekst>Hvis usikker: Når antar du å kunne gi tilbakemelding på dette?</Tekst>
-		<FeltType>Dato</FeltType>
-		<DynaRegler>UtdypendeOpplysninger</DynaRegler>
-		<Restriksjon>A</Restriksjon>
-		<Mapping>Prognose/ErIkkeArbeid/VurderingDato</Mapping>
-	</Ledetekst>-->
 	<Ledetekst Id="UtdypendeOpplysninger">
 		<Referanse>6</Referanse>
 		<Tekst>Utdypende opplysninger</Tekst>
 		<FeltType>Ledetekst</FeltType>
 		<Beskrivelse>Sykmelders helhetsvurdering av pasientens situasjon.</Beskrivelse>
 	</Ledetekst>
-<!--	<Ledetekst Id="Tiltak">
-		<Referanse>7</Referanse>
-		<Tekst>Hva skal til for å bedre arbeidsevnen?</Tekst>
-		<FeltType>Ledetekst</FeltType>
-	</Ledetekst>
-	<Ledetekst Id="TiltakArbeidsplassen">
-		<Referanse>7.1</Referanse>
-		<Tekst>Tilrettelegging/hensyn som bør tas på arbeidsplassen. Beskriv (kan leses av arbeidsgiver)</Tekst>
-		<FeltType>Tekst</FeltType>
-		<Mapping>Tiltak/TiltakArbeidsplassen</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="TiltakNAV">
-		<Referanse>7.2</Referanse>
-		<Tekst>Tiltak i regi av NAV. Beskriv (Ønskes bistand fra NAV nå, bruk felt 8)</Tekst>
-		<FeltType>Tekst</FeltType>
-		<Beskrivelse>Innspill til NAVs videre oppfølging i saken. Hvis det er ønske om bistand, og at NAV bør se på saken nå, bruk felt 8. </Beskrivelse>
-		<Restriksjon>A</Restriksjon>
-		<Mapping>Tiltak/TiltakNAV</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="AndreTiltak">
-		<Referanse>7.3</Referanse>
-		<Tekst>Eventuelle andre innspill til NAV. Beskriv </Tekst>
-		<FeltType>Tekst</FeltType>
-		<Restriksjon>A</Restriksjon>
-		<Mapping>Tiltak/AndreTiltak</Mapping>
-	</Ledetekst>-->
-<!--	<Ledetekst Id="MeldingTilNav">
-		<Referanse>8</Referanse>
-		<Tekst>Melding til NAV</Tekst>
-		<FeltType>Ledetekst</FeltType>
-		<Beskrivelse>Dette feltet skal bare brukes dersom du mener det er behov for bistand, og at NAV bør følge opp med en gang.</Beskrivelse>
-		<Restriksjon>A</Restriksjon>
-	</Ledetekst>
-	<Ledetekst Id="BistandNAVUmiddelbart">
-		<Referanse>8.1</Referanse>
-		<Tekst>Ønskes bistand fra NAV nå?</Tekst>
-		<FeltType>Sjekkboks</FeltType>
-		<Restriksjon>A</Restriksjon>
-		<Mapping>MeldingTilNav/BistandNAVUmiddelbart</Mapping>
-	</Ledetekst>-->
 	<Ledetekst Id="BeskrivBistandNAV">
 		<Referanse>8</Referanse>
 		<Tekst>Melding til NAV</Tekst>
@@ -599,11 +487,6 @@
 		<Restriksjon>A</Restriksjon>
 		<Mapping>MeldingTilNav/BeskrivBistandNAV</Mapping>
 	</Ledetekst>
-	<!--Ledetekst Id="MeldingTilArbeidsgiver">
-		<Referanse>9</Referanse>
-		<Tekst>Melding til arbeidsgiver</Tekst>
-		<FeltType>Ledetekst</FeltType>
-	</Ledetekst-->
 	<Ledetekst Id="BeskrivMeldingTilArbeidsgiver">
 		<Referanse>9</Referanse>
 		<Tekst>Melding til arbeidsgiver</Tekst>
@@ -611,35 +494,6 @@
 		<Beskrivelse>Beskriv tilrettelegging/hensyn som bør tas på arbeidsplassen. </Beskrivelse>
 		<Mapping>MeldingTilArbeidsgiver/BeskrivMeldingTilArbeidsgiver</Mapping>
 	</Ledetekst>
-	<!--Ledetekst Id="Oppfolgingsplan">
-		<Referanse>10</Referanse>
-		<Tekst>Oppfølgingsplan og dialogmøte 1</Tekst>
-		<FeltType>Ledetekst</FeltType>
-	</Ledetekst>
-	<Ledetekst Id="MottattOppfolgingsplan">
-		<Referanse>10.1</Referanse>
-		<Tekst>Har du mottatt oppfølgingsplan fra arbeidsgiver?</Tekst>
-		<FeltType>Radio(Ja/Nei)</FeltType>
-		<Mapping>Oppfolgingsplan/MottattOppfolgingsplan</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="InnkaltDialogmote1">
-		<Referanse>10.2</Referanse>
-		<Tekst>Er du innkalt til dialogmøte 1 i regi av arbeidsgiver?</Tekst>
-		<FeltType>Radio(Ja/Nei)</FeltType>
-		<Mapping>Oppfolgingsplan/InnkaltDialogmote1</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="DeltattDialogmote1">
-		<Referanse>10.3</Referanse>
-		<Tekst>Hvis ja, deltok du?</Tekst>
-		<FeltType>Radio(Ja/Nei)</FeltType>
-		<Mapping>Oppfolgingsplan/DeltattDialogmote1</Mapping>
-	</Ledetekst>
-	<Ledetekst Id="ArsakIkkeDeltatt">
-		<Referanse>10.4</Referanse>
-		<Tekst>Hvis nei, angi årsak</Tekst>
-		<FeltType>Tekst</FeltType>
-		<Mapping>Oppfolgingsplan/ArsakIkkeDeltatt</Mapping>
-	</Ledetekst-->
 	<Ledetekst Id="KontaktMedPasient">
 		<Referanse>11</Referanse>
 		<Tekst>Tilbakedatering</Tekst>

@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- edited with XMLSpy v2010 rel. 3 sp1 (x64) (http://www.altova.com) by XMLSpy 2009 Enterprise Ed., Installed for 30 users (with SMP from 2009-06-19 to 2010-06-20) (NAV ØKONOMITJENESTER) -->
-<!--
-
--->
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema.xsd" xmlns:kith="http://www.kith.no/xmlstds" xmlns:fk1="http://www.kith.no/xmlstds/felleskomponent1" xmlns:ho="http://www.kith.no/xmlstds/HelseOpplysningerArbeidsuforhet/2013-10-01" xmlns:ns1="http://www.kith.no/xmlstds/HelseOpplysningerArbeidsuforhet/2013-10-01" targetNamespace="http://www.kith.no/xmlstds/HelseOpplysningerArbeidsuforhet/2013-10-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
 	<import namespace="http://www.kith.no/xmlstds" schemaLocation="kith.xsd"/>
 	<import namespace="http://www.kith.no/xmlstds/felleskomponent1" schemaLocation="felleskomponent1.xsd"/>

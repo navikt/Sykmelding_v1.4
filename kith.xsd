@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<!-- edited with XML Spy v4.0 NT beta 2 build Jul 26 2001 (http://www.xmlspy.com) by Iver Nordhuus (KITH) -->
 <schema xmlns:kith="http://www.kith.no/xmlstds" xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.kith.no/xmlstds">
     <!--	Skjema som inneholder Felles definisjoner for KITH -->
     <!--	Modified 11. january 2007 (IN) -->
