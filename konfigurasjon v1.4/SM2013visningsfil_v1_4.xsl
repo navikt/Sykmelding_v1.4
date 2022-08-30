@@ -13,7 +13,7 @@
 	<xsl:output method="html" indent="yes" omit-xml-declaration="yes" encoding="UTF-8" doctype-system="about:legacy-compat" />
 
 	<!-- Load inn alle ledetekstene fra egen fil -->
-	<xsl:variable name="ledetekster" select="document('SM2013Ledetekst_v1_3.xml')/*" />
+	<xsl:variable name="ledetekster" select="document('SM2013Ledetekst_v1_4.xml')/*" />
 	<xsl:variable name="default_option_text_true" select="'Ja'" />
 	<xsl:variable name="default_option_text_false" select="'Nei'" />
 	<xsl:variable name="default_option_text_empty" select="' '" />
