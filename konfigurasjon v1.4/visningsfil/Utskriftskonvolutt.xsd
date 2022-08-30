@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2010 rel. 3 sp1 (x64) (http://www.altova.com) by XMLSpy 2009 Enterprise Ed., Installed for 30 users (with SMP from 2009-06-19 to 2010-06-20) (NAV ØKONOMITJENESTER) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ho="http://www.kith.no/xmlstds/HelseOpplysningerArbeidsuforhet/2013-10-01" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:import namespace="http://www.kith.no/xmlstds/HelseOpplysningerArbeidsuforhet/2013-10-01" schemaLocation="../../Sykmelding_2013_v1_4.xsd"/>
+	<xs:element name="Utskriftskonvolutt">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Utskriftsparameter" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>navn:Utskriftsdel:En string som representerer hvilken del av utskriften som skal være med.
+F.eks ABCDV.  Hvis strngen inneholder feks BCD skal alle deler untatt A skrives ut.
+
+Alternativt: Utskriftsvariant
+1 = Kun del A  - for NAV
+2 = Del B,C,D + veiledningsteks (V)t - Normalt for EPJ
+3 = Del B,C,D (uten veiledning)
+4 = ABCDV - alle deler
+
+ 
+</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:simpleContent>
+							<xs:extension base="xs:string">
+								<xs:attribute name="navn" type="xs:string" use="required"/>
+							</xs:extension>
+						</xs:simpleContent>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Content" type="xs:anyType"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

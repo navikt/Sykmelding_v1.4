@@ -1,0 +1,290 @@
+/* Reset default browser styles */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, img, strong, b, i, ol, ul, li, table, tbody, tfoot, thead, tr, th, td, footer, header, section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+body {
+    line-height: 1;
+    position: relative;
+}
+footer, header, section {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* Main body layout */
+@page {
+	margin: 22mm 15mm 20mm;
+}
+
+@media screen {
+	body {
+		padding: 20mm 15mm;
+	}
+}
+
+body {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 9pt;
+}
+
+body > section:not(.guide){
+	height: 100%;
+	page-break-after: always;
+}
+
+table.section,
+table.section > thead,
+table.section > thead th {
+	border: none;
+}
+
+/* Section header and footer */
+@font-face {
+	font-family: "3of9x";
+	src: url("../../font/fre3of9x.ttf");
+}
+
+.barcode {
+	font-family: "3of9x";
+}
+
+.machine_readable_header,
+tfoot .barcode {
+	font-size: 12mm;
+	font-weight: normal;
+	line-height: 1.2em;
+	height: 1.2em;
+	overflow: hidden;
+	position: relative;
+}
+
+.machine_readable_header > * {
+	float: left;
+	margin-bottom: 7mm;
+}
+
+.machine_readable_header .section_letter {
+	line-height: 1.31em;
+	min-width: 10mm;
+}
+
+.machine_readable_header .barcode {
+	margin-left: 11mm;
+}
+
+thead .ssn {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12pt;
+	font-weight: bold;
+	padding-top: 3mm;
+	padding-bottom: 8mm;	
+}
+
+.ssn .form_owner {
+	float: left;
+}
+
+.ssn .subject_ssn {
+	float: right;
+}
+
+thead .form_heading {
+	font-size: 0.9em;
+}
+
+thead .form_heading > * {
+	border: 1px solid black;
+	float: left;
+}
+
+thead .form_heading .title {
+	border-right: 1px solid;
+	width: 60%;
+}
+thead .form_heading h1,
+thead .form_heading h2 {
+	font-size: 1.2em;
+}
+
+thead .form_heading .recipient {
+	text-align: center;
+	vertical-align: middle;
+	width: 40%;
+}
+
+thead .form_heading .recipient * {
+	margin: auto;
+}
+
+section footer {
+	overflow: auto;
+	position: relative;
+}
+
+footer .barcode {
+	font-size: 12mm;
+	font-weight: normal;
+	line-height: 50mm;
+	height: 1.2em;
+}
+
+section header .form_heading {
+	font-size: 0.9em;
+}
+
+section header .form_heading > * {
+	border: 1px solid black;
+	float: left;
+}
+
+section header .form_heading .title {
+	border-right: 1px solid;
+	width: 60%;
+}
+section header .form_heading h1,
+section header .form_heading h2 {
+	font-size: 1.2em;
+}
+
+section header .form_heading .recipient {
+	text-align: center;
+	vertical-align: middle;
+	width: 40%;
+}
+
+section header .form_heading .recipient * {
+	margin: auto;
+}
+
+/* Main content */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table:not(.section),
+thead th {
+	border: 1px solid black;
+}
+
+/* hide sub section headings */
+.section table thead {
+	display: none;
+}
+
+th, td {
+	/* padding: 1mm; */
+	text-align: left;
+	vertical-align: top;
+}
+
+th:first-child,
+td:first-child {
+	width: 15mm;
+}
+
+th + td:last-child {
+	width: 40%;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+/* Additional content */
+ul,
+ol {
+	list-style-position: inside;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: 1em;
+	page-break-after: avoid;
+}
+
+p {
+	margin-top: 0.5em;
+}
+
+dl {
+	clear: both;
+	overflow: hidden;
+}
+
+dt,
+dd {
+	float: left;
+	height: 1.2em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+/* Employer summary section */
+section.employer_summary {
+	border: 1px solid black;
+	margin-bottom: 1em;
+	padding: 5mm;
+	overflow: auto;
+}
+
+.employer_summary table {
+	border: none;
+}
+.employer_summary td,
+.employer_summary  th {
+	font-weight: normal;
+	padding-left: 0;
+	width: auto;
+}
+
+.employer_summary h3,
+.employer_summary h4 {
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.employer_summary ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.employer_summary ul,
+.employer_summary p {
+	margin-top: 0;
+}
+
+.employer_summary dt::after {
+	content: ":";
+}
+
+.employer_summary .default-message {
+	margin-top: 1em;
+}
+
+/* Guide content */
+.guide {
+	font-size: 10pt;
+}
+.guide h2 {
+	font-size: 1.3em;
+}
+
+.guide h3 {
+	font-size: 1.1em;
+}
