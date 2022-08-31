@@ -712,12 +712,31 @@
             <xsl:with-param name="colspan_third_col" select="2" />
 			<xsl:with-param name="remove_space" select="'true'" />
         </xsl:call-template>
-        <xsl:call-template name="write_standard_table_row">
-            <xsl:with-param name="ledetekst_id" select="'AktivitetIkkeMuligMedisinskeArsakerArsakskode'" />
-            <xsl:with-param name="value" select="ho:Arsakskode/@DN" />
-            <xsl:with-param name="colspan_third_col" select="2" />
-			<xsl:with-param name="remove_space" select="'true'" />
-        </xsl:call-template>
+				<tr>
+				<th>
+					<xsl:call-template name="ledetekst_ref">
+						<xsl:with-param name="id" select="'AktivitetIkkeMuligMedisinskeArsakerArsakskode'" />
+					</xsl:call-template>
+				</th>
+				<th>
+					<xsl:call-template name="ledetekst_tekst">
+						<xsl:with-param name="id" select="'AktivitetIkkeMuligMedisinskeArsakerArsakskode'" />
+					</xsl:call-template>
+				</th>
+					<td>
+					<xsl:for-each select="ho:Arsakskode">
+						<p>
+						<xsl:attribute name="colspan">
+							<xsl:value-of select="2" />
+						</xsl:attribute>
+					<xsl:value-of select="./@DN" />
+						<xsl:if test="position() != last()">
+							<xsl:text>,</xsl:text>
+						</xsl:if>
+						</p>
+					</xsl:for-each>
+					</td>>
+			</tr>
         <xsl:call-template name="write_standard_table_row">
             <xsl:with-param name="ledetekst_id" select="'AktivitetIkkeMuligMedisinskeArsakerBeskriv'" />
             <xsl:with-param name="value" select="ho:Beskriv" />
@@ -745,12 +764,28 @@
             <xsl:with-param name="colspan_third_col" select="2" />
 			<xsl:with-param name="remove_space" select="'true'" />
         </xsl:call-template>
-        <xsl:call-template name="write_standard_table_row">
-            <xsl:with-param name="ledetekst_id" select="'AktivitetIkkeMuligArbeidplassenArsakskode'" />
-            <xsl:with-param name="value" select="ho:Arsakskode/@DN" />
-            <xsl:with-param name="colspan_third_col" select="2" />
-			<xsl:with-param name="remove_space" select="'true'" />
-        </xsl:call-template>
+		 <tr>
+			 <th>
+				 <xsl:call-template name="ledetekst_ref">
+					 <xsl:with-param name="id" select="'AktivitetIkkeMuligArbeidplassenArsakskode'" />
+				 </xsl:call-template>
+			 </th>
+			 <th>
+				 <xsl:call-template name="ledetekst_tekst">
+					 <xsl:with-param name="id" select="'AktivitetIkkeMuligArbeidplassenArsakskode'" />
+				 </xsl:call-template>
+			 </th>
+			 <td>
+				 <xsl:for-each select="ho:Arsakskode">
+					 <p>
+					 <xsl:attribute name="colspan">
+						 <xsl:value-of select="2" />
+					 </xsl:attribute>
+					 <xsl:value-of select="./@DN" />
+					 </p>
+				 </xsl:for-each>
+			 </td>>
+		 </tr>
         <xsl:call-template name="write_standard_table_row">
             <xsl:with-param name="ledetekst_id" select="'AktivitetIkkeMuligArbeidsplassenBeskriv'" />
             <xsl:with-param name="value" select="ho:Beskriv" />

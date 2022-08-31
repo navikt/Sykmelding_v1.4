@@ -67,10 +67,12 @@
 							<ho:AktivitetIkkeMulig>
 								<ho:Arbeidsplassen>
 									<ho:Arsakskode DN="NA-5" V="Noe"/>
-									<ho:Beskriv/>
+									<ho:Arsakskode DN="NA-6" V="Noe annet"/>
+									<ho:Beskriv>jobben er utfordende</ho:Beskriv>
 								</ho:Arbeidsplassen>
 								<ho:MedisinskeArsaker>
 									<ho:Arsakskode DN="NA-5" V="Noe"/>
+									<ho:Arsakskode DN="NA-7" V="Noe annet"/>
 									<ho:Beskriv>arr for livet</ho:Beskriv>
 								</ho:MedisinskeArsaker>
 							</ho:AktivitetIkkeMulig>
