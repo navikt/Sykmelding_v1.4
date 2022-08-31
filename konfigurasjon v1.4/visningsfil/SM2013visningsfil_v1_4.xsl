@@ -730,9 +730,6 @@
 							<xsl:value-of select="2" />
 						</xsl:attribute>
 					<xsl:value-of select="./@DN" />
-						<xsl:if test="position() != last()">
-							<xsl:text>,</xsl:text>
-						</xsl:if>
 						</p>
 					</xsl:for-each>
 					</td>>
