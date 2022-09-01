@@ -732,7 +732,7 @@
 					<xsl:value-of select="./@DN" />
 						</p>
 					</xsl:for-each>
-					</td>>
+					</td>
 			</tr>
         <xsl:call-template name="write_standard_table_row">
             <xsl:with-param name="ledetekst_id" select="'AktivitetIkkeMuligMedisinskeArsakerBeskriv'" />

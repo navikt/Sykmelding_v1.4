@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="SM2013visningsfil_v1_2.xsl"?>
+<Utskriftskonvolutt xsi:noNamespaceSchemaLocation="Utskriftskonvolutt.xsd"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Utskriftsparameter navn="utskriftsdel">4</Utskriftsparameter>
+    <Content>
+        <ho:HelseOpplysningerArbeidsuforhet xmlns:fk1="http://www.kith.no/xmlstds/felleskomponent1"
+                                            xmlns:ho="http://www.kith.no/xmlstds/HelseOpplysningerArbeidsuforhet/2013-10-01"
+                                            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ho:RegelSettVersjon>3</ho:RegelSettVersjon>
+            <ho:SyketilfelleStartDato>2022-01-03</ho:SyketilfelleStartDato>
+            <ho:Pasient>
+                <ho:Navn>
+                    <ho:Etternavn>Nordmann</ho:Etternavn>
+                    <ho:Fornavn>Erik</ho:Fornavn>
+                </ho:Navn>
+                <ho:Fodselsnummer>
+                    <fk1:Id>17039902028</fk1:Id>
+                    <fk1:TypeId DN="Fødselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+                </ho:Fodselsnummer>
+            </ho:Pasient>
+            <ho:Arbeidsgiver>
+                <ho:HarArbeidsgiver DN="En arbeidsgiver" V="1"/>
+                <ho:NavnArbeidsgiver>Thon Hotels</ho:NavnArbeidsgiver>
+                <ho:Yrkesbetegnelse>Sekeretær</ho:Yrkesbetegnelse>
+                <ho:Stillingsprosent>100</ho:Stillingsprosent>
+            </ho:Arbeidsgiver>
+            <ho:MedisinskVurdering>
+                <ho:HovedDiagnose>
+                    <ho:Diagnosekode DN="Psykisk ubalanse situasjonsbetinget" OT="oT" S="2.16.578.1.12.4.1.1.7110"
+                                     V="P02"/>
+                </ho:HovedDiagnose>
+                <ho:Svangerskap>false</ho:Svangerskap>
+                <ho:Yrkesskade>false</ho:Yrkesskade>
+            </ho:MedisinskVurdering>
+            <ho:Aktivitet>
+                <ho:Periode>
+                    <ho:PeriodeFOMDato>2022-05-28</ho:PeriodeFOMDato>
+                    <ho:PeriodeTOMDato>2022-07-28</ho:PeriodeTOMDato>
+                    <ho:AktivitetIkkeMulig>
+                        <ho:MedisinskeArsaker>
+                            <ho:Arsakskode DN="helsetilstanden hindrer pasienten å være i aktivitet" V="A"/>
+                            <ho:Beskriv>Det er ikke mulig å gjennomføre planlagt arbeid</ho:Beskriv>
+                        </ho:MedisinskeArsaker>
+                    </ho:AktivitetIkkeMulig>
+                </ho:Periode>
+            </ho:Aktivitet>
+            <ho:Prognose>
+                <ho:ArbeidsforEtterEndtPeriode>false</ho:ArbeidsforEtterEndtPeriode>
+                <ho:BeskrivHensynArbeidsplassen/>
+            </ho:Prognose>
+            <ho:UtdypendeOpplysninger>
+                <ho:SpmGruppe>
+                    <ho:SpmGruppeId>6.4</ho:SpmGruppeId>
+                    <ho:SpmGruppeTekst>Utdypende opplysninger ved uke 17 (til NAVs vurdering av oppfølgingen)
+                    </ho:SpmGruppeTekst>
+                    <ho:SpmSvar>
+                        <ho:SpmId>6.4.1</ho:SpmId>
+                        <ho:SpmTekst>Beskriv kort sykdomsutviklingen, symptomer og funn. Hvordan påvirker
+                            helsetilstanden funksjonen i arbeid og dagligliv?
+                        </ho:SpmTekst>
+                        <ho:Restriksjon>
+                            <ho:Restriksjonskode/>
+                            <ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
+                            <ho:Restriksjonskode/>
+                        </ho:Restriksjon>
+                        <ho:SvarTekst>Deprimert i flere måneder. Angstfølelse, søvnvansker, negative tanker.
+                            Sannsynligvis har samlivsbrudd bidratt til situasjonen. Ved undersøkelse i dag har pasienten
+                            nedsatt mimikk, svarer langsomt på spørsmål med latenstid. Vurderer at pasienten har
+                            betydelig påvirket funksjonsevne, men har noe arbeidsevne og det er positivt å holde kontakt
+                            med arbeidsplassen.
+                        </ho:SvarTekst>
+                    </ho:SpmSvar>
+                    <ho:SpmSvar>
+                        <ho:SpmId>6.4.2</ho:SpmId>
+                        <ho:SpmTekst>Beskriv pågående og planlagt utredning og/eller behandling. Lar dette seg kombinere
+                            med delvis arbeid?
+                        </ho:SpmTekst>
+                        <ho:Restriksjon>
+                            <ho:Restriksjonskode/>
+                            <ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
+                            <ho:Restriksjonskode/>
+                        </ho:Restriksjon>
+                        <ho:SvarTekst>Det har vært noe langsom bedring. Vurderer fra gang til gang om det er behov for
+                            henvisning til spesialisthelsetjenesten eller oppstart av SSRI. Foreløpig har vi avventet
+                            medikamentell behandling og opprettholder regelmessige samtaletimer. Pasienten arbeider som
+                            sekretær og klarer akkurat nå 30% arbeid.
+                        </ho:SvarTekst>
+                    </ho:SpmSvar>
+                    <ho:SpmSvar>
+                        <ho:SpmId>6.4.3</ho:SpmId>
+                        <ho:SpmTekst>Hva mener du skal til for at pasienten kan komme tilbake i eget eller annet
+                            arbeid?
+                        </ho:SpmTekst>
+                        <ho:Restriksjon>
+                            <ho:Restriksjonskode/>
+                            <ho:Restriksjonskode V="A" DN="Arbeidsgiver"/>
+                            <ho:Restriksjonskode/>
+                        </ho:Restriksjon>
+                        <ho:SvarTekst>Vurderer at den pÃ¥gÃ¥ende behandlingen hos undertegnende med kognitiv terapi og
+                            oppfordring til Ã¥ ikke isolere seg, samt kontakt med arbeidsplassen sannsynligvis vil fÃ¸re
+                            til bedring. Det er noe bedring allerede. Det er usikkert hvor lang tid det vil gÃ¥ fÃ¸r
+                            pasienten kan arbeide fullt.
+                        </ho:SvarTekst>
+                    </ho:SpmSvar>
+                </ho:SpmGruppe>
+            </ho:UtdypendeOpplysninger>
+            <ho:KontaktMedPasient>
+                <ho:BehandletDato>2022-01-05T10:12:00</ho:BehandletDato>
+            </ho:KontaktMedPasient>
+            <ho:Behandler>
+                <ho:Navn>
+                    <ho:Etternavn>Nordmann</ho:Etternavn>
+                    <ho:Fornavn>Ola</ho:Fornavn>
+                </ho:Navn>
+                <ho:Id>
+                    <fk1:Id>9999999</fk1:Id>
+                    <fk1:TypeId DN="HPR-nummer" S="2.16.578.1.12.4.1.1.8116" V="HPR"/>
+                </ho:Id>
+                <ho:Id>
+                    <fk1:Id>17056400109</fk1:Id>
+                    <fk1:TypeId DN="FÃ¸dselsnummer" S="2.16.578.1.12.4.1.1.8116" V="FNR"/>
+                </ho:Id>
+                <ho:Adresse>
+                    <fk1:Type DN="Postadresse" V="PST"/>
+                    <fk1:StreetAdr>RÃ¥dhusveien 22</fk1:StreetAdr>
+                    <fk1:PostalCode>8012</fk1:PostalCode>
+                    <fk1:City>BODÃ</fk1:City>
+                    <fk1:Country DN="Norge" V="NO"/>
+                </ho:Adresse>
+                <ho:KontaktInfo>
+                    <fk1:TypeTelecom DN="Arbeidsplass" V="WP"/>
+                    <fk1:TeleAddress V="tel:22 00 22 00"/>
+                </ho:KontaktInfo>
+            </ho:Behandler>
+            <ho:AvsenderSystem>
+                <ho:SystemNavn>Mitt EPJ-system</ho:SystemNavn>
+                <ho:SystemVersjon>1.0.0</ho:SystemVersjon>
+            </ho:AvsenderSystem>
+            <ho:Strekkode>strekkode1</ho:Strekkode>
+        </ho:HelseOpplysningerArbeidsuforhet>
+    </Content>
+</Utskriftskonvolutt>
