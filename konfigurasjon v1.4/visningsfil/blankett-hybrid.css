@@ -51,12 +51,12 @@ table.section > thead th {
 
 /* Section header and footer */
 @font-face {
-	font-family: "3of9x";
-	src: url("../../font/fre3of9x.ttf");
+	font-family: "barcode-code39";
+	src: url("../../font/barcode-code39.ttf");
 }
 
 .barcode {
-	font-family: "3of9x";
+	font-family: "barcode-code39";
 }
 
 .machine_readable_header,
