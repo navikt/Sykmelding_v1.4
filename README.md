@@ -4,7 +4,7 @@ Sykmelding version 1.4 with associated xsds,xsl and xml examples
 
 ### Contact
 
-This project is maintained by navikt/teamsykmelding
+This project is maintained by [navikt/teamsykmelding](CODEOWNERS)
 
 Questions and/or feature requests? Please create an [issue](https://github.com/navikt/Sykmelding_v1.4/issues) 
 or contact us at <nav.sykmelding@nav.no>
