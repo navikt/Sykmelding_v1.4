@@ -406,7 +406,7 @@ uker?</documentation>
 				<element name="MeldingTilNav" minOccurs="0">
 					<complexType>
 						<sequence>
-							<element name="BistandNAVUmiddelbart" type="boolean" minOccurs="0">
+							<element name="BistandNAVUmiddelbart" type="boolean">
 								<annotation>
 									<documentation>Bør NAV ta fatt i saken umiddelbart?</documentation>
 								</annotation>
